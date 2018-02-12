@@ -1820,7 +1820,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #32e5ff;
+  background: #82f1aa;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2939,7 +2939,10 @@ body {
   text-align: center;
 }
 .post-body p {
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  padding: 5px 0 5px 0;
+  color: #333;
 }
 .post-body h2 {
   font-size: 26px;
@@ -2947,6 +2950,6 @@ body {
   letter-spacing: 3px;
 }
 .post-body h3 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 800;
 }
