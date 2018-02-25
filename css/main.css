@@ -1124,7 +1124,7 @@ pre .javascript .function {
   line-height: 36px;
   font-size: 20px;
   font-weight: normal;
-  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Pompiere', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .site-subtitle {
   margin-top: 10px;
@@ -1820,7 +1820,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #22e2ff;
+  background: #42c6ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2941,15 +2941,21 @@ body {
 .post-body p {
   letter-spacing: 0.5px;
   font-weight: 400;
-  padding: 5px 0 5px 0;
+  padding: 3px 0 3px 0;
+  color: #777 7;
+}
+.post-body strong {
+  letter-spacing: 1px;
+  font-weight: 800;
   color: #333;
+  font-size: 17px;
 }
 .post-body h2 {
   font-size: 26px;
-  font-weight: 800;
+  font-weight: 200;
   letter-spacing: 3px;
 }
 .post-body h3 {
-  font-size: 22px;
-  font-weight: 800;
+  font-size: 20px;
+  font-weight: 600;
 }
