@@ -1820,7 +1820,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #362db6;
+  background: #fa6a99;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2701,11 +2701,19 @@ hr {
 .links-of-author-item {
   text-align: center;
 }
+.main-inner {
+  margin-top: 40px;
+}
 .header {
   background: url("/images/bg.jpg");
-  background-size: 100vw;
+  background-size: 120vw;
   background-position: center;
-  padding: 40px;
+  padding: 20px 0 20px 0;
+}
+@media (max-width: 767px) {
+  .header {
+    padding: 0;
+  }
 }
 .site-meta {
   float: none;
@@ -2719,7 +2727,15 @@ hr {
 }
 .menu .menu-item a {
   font-size: 14px;
-  color: #0f2e41;
+  color: #fff;
+  background: rgba(0,0,0,0.3);
+  border-radius: 4px;
+}
+.menu .menu-item a:hover,
+.menu .menu-item-active a {
+  font-size: 14px;
+  color: #fff;
+  background: #000;
   border-radius: 4px;
 }
 .site-meta {
@@ -2733,6 +2749,11 @@ hr {
 }
 .page-post-detail .post-meta {
   margin-bottom: 0px;
+}
+@media (max-width: 767px) {
+  .site-nav {
+    border: none;
+  }
 }
 .nav-item {
   font-size: 16px;
@@ -2769,6 +2790,10 @@ hr {
   padding: 25px;
   -webkit-box-shadow: 0 0 14px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 14px rgba(202,203,204,0.5);
+}
+.posts-expand .post-title,
+.posts-expand .post-meta {
+  text-align: center;
 }
 blockquote {
   margin: 20px 0 20px 0;
