@@ -340,10 +340,9 @@ a {
 }
 
 #post-content blockquote {
-  border-left: 4px solid #DDD;
+  border-left: 2px solid #000000;
   padding: 0 15px;
-  color: #555555;
-  margin: 40px;
+  margin: 40px 0;
   font-style: italic;
 }
 
