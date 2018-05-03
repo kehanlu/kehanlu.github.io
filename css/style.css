@@ -160,3 +160,7 @@ nav .brand-logo {
 .fixed-action-btn.active ul {
   visibility: visible;
 }
+
+.video-container {
+  margin: 50px 0;
+}
