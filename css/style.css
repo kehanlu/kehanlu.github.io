@@ -15,7 +15,7 @@ a {
 /* blog-post */
 
 .blog-post {
-  margin: 80px auto;
+  margin: 10px auto;
   max-width: 1000px;
 }
 
@@ -132,9 +132,11 @@ nav {
 }
 
 nav .brand-logo {
-  letter-spacing: 1.13;
+  letter-spacing: 1.07;
   color: #000;
-  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  font-family: 'Times New Roman', serif;
 }
 
 .card .card-title a {
@@ -154,7 +156,7 @@ nav .brand-logo {
 }
 
 .blog-article {
-  margin: 80px 0;
+  margin: 10px 0;
 }
 
 .fixed-action-btn.active ul {
@@ -162,5 +164,9 @@ nav .brand-logo {
 }
 
 .video-container {
-  margin: 50px 0;
+  margin: 40px 0;
+}
+
+.card .card-image img {
+  height: 300px;
 }

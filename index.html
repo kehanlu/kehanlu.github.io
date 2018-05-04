@@ -14,9 +14,14 @@
 
     
     <script>
+    var randomNum = Math.floor(Math.random()*15);
     function randthumbnail(){
-        var randomNum = Math.floor(Math.random()*14);
         return "/images/"+randomNum+".png"
+    }
+
+    function thumbnailPath(){
+        randomNum++;
+        return "/images/"+ randomNum % 15+".png";
     }
     </script>
 
@@ -24,7 +29,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
     
-        <title>luuuy@blog</title>    
+        <title>Meowdium</title>    
     
     
 </head>
@@ -35,25 +40,25 @@
     </a>
 
     <div class="container">
-    <!-- <nav>
-  <a href="/" class="brand-logo center">luuuy@blog</a>
-</nav> -->
+    <nav>
+  <a href="/" class="brand-logo center">Meowdium</a>
+</nav>
 
 
 <ul id="slide-out" class="sidenav">
     <li><div class="user-view">
+        <a href="/">
       <div class="background">
         <img src="/images/side-bg.jpg">
       </div>
-      <a href="/"><img class="circle" src="/images/avatar.png"></a>
+      <img class="circle" src="/images/avatar.png"></a>
       <a href=""><span class="white-text name">Hank Lu</span></a>
       <a href=""><span class="white-text email">s210215@shsh.tw</span></a>
     </div></li>
     <li><a href="https://github.com/" target="_blank"><i class="fab fa-github fa-2x"></i>GitHub</a></li>
     <li><a href="https://medium.com/@luuuy" target="_blank"><i class="fab fa-medium fa-2x"></i>Medium</a></li>
     <li><div class="divider"></div></li>
-    <li><a class="subheader">CS student in TaiwanTech</a></li>
-    <!-- <li><a class="waves-effect" href="#!">Third Link With Waves</a></li> -->
+    <li><a class="subheader center-align">CS student in TaiwanTech</a></li>
 </ul>
   
     
@@ -134,7 +139,7 @@
     $('.blog-post-thumbnail').css("background-image", "url("+randthumbnail()+")");
 
     $('.card-image').each(function(){
-        $(this).children().attr('src',randthumbnail());
+        $(this).children().attr('src',thumbnailPath());
     })
 </script>
 
