@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700');
+/*@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);*/
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 body {
   color: rgba(0, 0, 0, .84);
-  /*background-image: url('/images/bg.png');
-background-repeat: no-repeat;
-background-attachment: fixed;
-*/
+  font-family: 'Source Code Pro', monospace; /*,'Noto Sans TC', sans-serif;*/
 }
 
 a {
@@ -12,11 +10,25 @@ a {
 }
 
 
+
 /* blog-post */
 
 .blog-post {
   margin: 10px auto;
   max-width: 1000px;
+}
+
+.blog-post img{
+  display:block;
+  margin: 50px auto;
+  width: 100%;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.fb-video{
+  display:block;
+  margin: 30px auto;
 }
 
 .blog-post-thumbnail {
@@ -64,12 +76,15 @@ a {
 
 .blog-post pre {
   overflow: auto;
+  padding: 5px;
+  font-family: 'Source Code Pro', monospace;
 }
 
 .blog-post h2 {
   font-size: 32px;
-  font-weight: 600;
-  margin-top: 70px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-top: 50px;
 }
 
 .blog-post h3 {
@@ -81,7 +96,7 @@ a {
 .blog-post p {
   font-size: 21px;
   line-height: 1.7;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .blog-post .blog-post-content ul li {
@@ -105,22 +120,27 @@ a {
 
 blockquote {
   border-left: 5px solid #80cbc4;
+  overflow: auto;
+}
+blockquote p{
+  margin: 10px 0 !important;
 }
 
 .headerlink {
   display: none;
 }
 
-p > code {
+p>code{
   padding: 3px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 2;
   background-color: rgba(0, 0, 0, .07);
+  border-radius: 5px;
 }
 
 @media (max-width:768px) {
-  p > code {
-    font-size: 16px;
+  p>code {
+    font-size: 14px;
   }
 }
 
@@ -128,21 +148,45 @@ nav {
   background-color: #fff;
   box-shadow: none;
   width: 100%;
-  margin: 10px 0;
+  height: 80px;
+  text-align: center;
+  margin: 30px 0 10px 0;
 }
+
 
 nav .brand-logo {
-  letter-spacing: 1.07;
-  color: #000;
-  font-size: 2.5rem;
-  font-weight: 800;
-  font-family: 'Times New Roman', serif;
+  color: rgba(0, 0, 0, 0.84);
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: 33px;
 }
 
+nav .description{
+  color: gray;
+  font-size: 16px;
+  line-height:16px;
+}
+
+@media (max-width: 768px){
+  nav .description{
+    display: none;
+  }
+  nav{
+    height: 40px;
+    margin: 25px 0 10px 0;
+  }
+}
+
+/* Card*/
 .card .card-title a {
   font-size: 18px;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.84);
+}
+
+.card-date{
+  color: gray;
 }
 
 .excerpt p {
@@ -169,4 +213,8 @@ nav .brand-logo {
 
 .card .card-image img {
   height: 300px;
+}
+
+.card .card-content p{
+  margin-top:10px;
 }

