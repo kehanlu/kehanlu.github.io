@@ -170,10 +170,10 @@ nav .description{
 
 @media (max-width: 768px){
   nav .description{
-    display: none;
+    font-size: 14px;
   }
   nav{
-    height: 40px;
+    height: 60px;
     margin: 25px 0 10px 0;
   }
 }
