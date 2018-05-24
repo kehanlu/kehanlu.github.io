@@ -80,6 +80,10 @@ a {
   font-family: 'Source Code Pro', monospace;
 }
 
+.blog-post code{
+  font-family: 'Source Code Pro', monospace;
+}
+
 .blog-post h2 {
   font-size: 32px;
   font-weight: 500;
@@ -115,6 +119,7 @@ a {
   }
   .blog-post .blog-post-content ul li {
     font-size: 18px;
+    margin-left: 20px;
   }
 }
 
@@ -176,6 +181,10 @@ nav .description{
     height: 60px;
     margin: 25px 0 10px 0;
   }
+}
+
+.blog-post .author{
+  margin-right: 30px;
 }
 
 /* Card*/
