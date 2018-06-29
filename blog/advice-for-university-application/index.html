@@ -1,13 +1,11 @@
 <html>
 <head>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114741779-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-114741779-1');
     </script>
 
@@ -15,85 +13,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-    <meta property="og:title" content="大學備審資料撰寫方向建議 - 茶花本" />
+    <meta property="og:title" content="大學備審資料撰寫方向建議 - deephank" />
     
-
     
     <meta property="og:image"  content="" />
     
 
-    <link rel="stylesheet" href="/css/materialize.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bulma.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/prettify.css">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    
-    <script>
-    var randomNum = Math.floor(Math.random()*15);
-    function randthumbnail(){
-        return "/images/"+randomNum+".png"
-    }
-
-    function thumbnailPath(){
-        randomNum++;
-        return "/images/"+ randomNum % 15+".png";
-    }
-
-    </script>
-
+    <script src="/js/fontawesome.js"></script>
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
     
-        <title>大學備審資料撰寫方向建議 - 茶花本</title>    
+        <title>大學備審資料撰寫方向建議 - deephank</title>    
     
     
 </head>
 
+<script src="/js/prettify.js"></script>
+
 <body onload="PR.prettyPrint()">
-    <a href="#" data-target="slide-out" class="sidenav-trigger">
-        <i class="Small material-icons">menu</i>
-    </a>
+    <nav class="navbar is-fixed-top has-shadow is-spaced" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/thinking_face.png"width="30" height="30">
+      </a>
 
-    <div class="container">
-    <nav>
-      <a href="/" class="brand-logo">茶花本</a>
-      <p class="description">茶花本是烏龍派出所裡 唬爛讀者出版社 的編輯</p>
-</nav>
-
-
-<ul id="slide-out" class="sidenav">
-    <li><div class="user-view">
-        <a href="/">
-      <div class="background">
-        <img src="/images/side-bg.jpg">
+      <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu" id="navMenu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/">
+          <span class="icon">
+            <i class="fas fa-star"></i>
+          </span>
+          <span>About Me</span>
+        </a>
+        <a class="navbar-item" href="/blog/">
+          <span class="icon">
+            <i class="fas fa-book"></i>
+          </span>
+          <span>Blog</span>
+        </a>
       </div>
-      <img class="circle" src="/images/avatar.png"></a>
-      <a href=""><span class="white-text name">Hank Lu</span></a>
-      <a href=""><span class="white-text email">s210215@shsh.tw</span></a>
-    </div></li>
-    <li><a href="https://github.com/" target="_blank"><i class="fab fa-github fa-2x"></i>GitHub</a></li>
-    <li><a href="https://medium.com/@luuuy" target="_blank"><i class="fab fa-medium fa-2x"></i>Medium</a></li>
-    <li><div class="divider"></div></li>
-    <li><a class="subheader center-align">CS student in TaiwanTech</a></li>
-</ul>
-  
-    <div class="row">
-    <div class="blog-post z-depth-1">
-        
-        <div class="blog-post-thumbnail">
-            
-            <a href="/advice-for-university-application/" class="blog-post-title">
-                <h1 >大學備審資料撰寫方向建議</h1>
-            </a>
-        </div>
 
-        <!-- Content -->
-        <div class="blog-post-content">
-        <span class="author">作者：Hank Lu</span>
-        <span class="last-update">最後更新：2018-05-03 </span>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="field is-grouped">
+            <a class="navbar-item" href="https://github.com/deephank">
+              <img src="/images/github.svg">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+    <div class="main">
+        <section class="section">
+            <div class="container">
+                <article>
+    <h1 class="title">大學備審資料撰寫方向建議</h1>
+    <h2 class="subtitle">
+        2018-05-03
+    </h2>
+
+    <div class="content">
         <p>有鑒於學測成績公布，莘莘學子也要進入推甄面試的階段。當年承蒙許多老師幫助，在學測申請時順利的錄取不錯的校系，自己也歸納了一些想法，有時也會突然有可愛的學弟妹跑來問問題，不如就直接寫成一篇文章吧！</p>
 <a id="more"></a>
 <p>申請大學應該是所有人第一次面對非紙本考試，你必須在十幾頁的篇幅中總結你18年來做過的事，甚至只有1分鐘的時間自我介紹，結果教授花短短幾分鐘，用幾個評量分數就決定你會不會被錄取。如何「篩選」出「最有利」的資訊就顯得更重要了。</p>
@@ -184,45 +177,23 @@
 <h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>基本上你會來看這篇文章，代表你自己已有打算，可能只是找不到方向去做，會主動進步的人通常都會有很好的結果，所謂天助自助者。當初我在申請大學時我自知自己的優勢是個人申請、加上不可能認真準備指考（惰性使然），所以放了很多心力在學測、申請上，所謂知己知彼百戰百勝就是這樣子吧～</p>
 <p>大學是一個很好玩的階段，你可以做任何事，也可以不做任何事，甚至可以拒絕任何事。科系的選擇，幾乎決定了人生發展的方向，從基礎知識的學習邁向專業化的學習。你至少要選一個不討厭的科系，否則大學生活會過的非常痛苦。如果你已經知道你要的是什麼，那就追隨你心中的想法努力去做吧！後來到了大學突然發現不念大學其實也可以呢～ㄎㄎ</p>
 
-        </div>
-
-        <div class="fixed-action-btn">
-          <a class="btn-floating btn-large teal">
-            <i class="material-icons">add</i>
-          </a>
-          <ul>
-            <li><a class="btn-floating teal lighten-2" href="/"><i class="material-icons">home</i></a></li>
-            <li onclick="$('html,body').animate({scrollTop:0},'slow')">
-                <a class="btn-floating teal lighten-1"><i class="material-icons">keyboard_arrow_up</i></a>
-            </li>
-          </ul>
-        </div>
-
     </div>
-</div>
+</article>
+            </div>
+        </section>
     </div>
+    <div class="footer">
+        <footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      powered by Hank
+    </p>
+  </div>
+</footer>
+    </div>
+
 </body>
-<script src="/js/prettify.js"></script>
-<script src="/js/materialize.js"></script>
-<script>$('pre').addClass('prettyprint linenums')</script>
-
-<script>
-    $('.blog-post-thumbnail').css("background-image", "url("+randthumbnail()+")");
-
-    $('.card-image').each(function(){
-        $(this).children().attr('src',thumbnailPath());
-    })
-</script>
-
-
-<script>
-  $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
-
-   $('.fixed-action-btn').floatingActionButton({
-    direction: 'top',
-  });
-   $('.fixed-action-btn').floatingActionButton('open');
-</script>
 </html>
+
+<script src="/js/footer.js"></script>
+<script src="/js/prettify.js"></script>

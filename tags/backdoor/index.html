@@ -1,13 +1,11 @@
 <html>
 <head>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114741779-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-114741779-1');
     </script>
 
@@ -15,156 +13,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-
     
 
-    <link rel="stylesheet" href="/css/materialize.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bulma.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/prettify.css">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    
-    <script>
-    var randomNum = Math.floor(Math.random()*15);
-    function randthumbnail(){
-        return "/images/"+randomNum+".png"
-    }
-
-    function thumbnailPath(){
-        randomNum++;
-        return "/images/"+ randomNum % 15+".png";
-    }
-
-    </script>
-
+    <script src="/js/fontawesome.js"></script>
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
     
     
 </head>
 
-<body onload="PR.prettyPrint()">
-    <a href="#" data-target="slide-out" class="sidenav-trigger">
-        <i class="Small material-icons">menu</i>
-    </a>
-
-    <div class="container">
-    <nav>
-      <a href="/" class="brand-logo">茶花本</a>
-      <p class="description">茶花本是烏龍派出所裡 唬爛讀者出版社 的編輯</p>
-</nav>
-
-
-<ul id="slide-out" class="sidenav">
-    <li><div class="user-view">
-        <a href="/">
-      <div class="background">
-        <img src="/images/side-bg.jpg">
-      </div>
-      <img class="circle" src="/images/avatar.png"></a>
-      <a href=""><span class="white-text name">Hank Lu</span></a>
-      <a href=""><span class="white-text email">s210215@shsh.tw</span></a>
-    </div></li>
-    <li><a href="https://github.com/" target="_blank"><i class="fab fa-github fa-2x"></i>GitHub</a></li>
-    <li><a href="https://medium.com/@luuuy" target="_blank"><i class="fab fa-medium fa-2x"></i>Medium</a></li>
-    <li><div class="divider"></div></li>
-    <li><a class="subheader center-align">CS student in TaiwanTech</a></li>
-</ul>
-  
-    
-<div class="blog-article">
-<div class="row">
-
-
-<div class="col m6">
-
-    
-    <div class="post-article card">
-    
-    <a href="/buddymeter-bug/">
-    <div class="card-image waves-effect waves-block waves-light">
-       <img class="activator" >
-    </div>
-    </a>
-    <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4">
-            <a href="/buddymeter-bug/"> 
-                IG 匿名問答 BuddyMeter 網頁漏洞
-            </a>
-        </span>
-        <span class="card-date">2018-05-24</span>
-        <span class="excerpt">
-            <p>最近很流行的 instagram 匿名問答網站 —— <a href="https://buddymeter.com/" target="_blank" rel="noopener">Buddymetter</a> ，每個人都在測試自己是不是邊緣人，結果還真的是邊緣人= = 不過因為方便使用加上快速流行，所以還是滿多人跟風的。</p>
-        </span>
-    </div>
-</div>
-    
-    
-
-    
-    
-
-</div>
-
-<div class="col m6">
-
-    
-    
-
-    
-    <div class="post-article card">
-    
-    <a href="/advice-for-university-application/">
-    <div class="card-image waves-effect waves-block waves-light">
-       <img class="activator" >
-    </div>
-    </a>
-    <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4">
-            <a href="/advice-for-university-application/"> 
-                大學備審資料撰寫方向建議
-            </a>
-        </span>
-        <span class="card-date">2018-05-03</span>
-        <span class="excerpt">
-            <p>有鑒於學測成績公布，莘莘學子也要進入推甄面試的階段。當年承蒙許多老師幫助，在學測申請時順利的錄取不錯的校系，自己也歸納了一些想法，有時也會突然有可愛的學弟妹跑來問問題，不如就直接寫成一篇文章吧！</p>
-        </span>
-    </div>
-</div>
-    
-    
-
-</div>
-
-
-</div>
-</div>
-    </div>
-</body>
 <script src="/js/prettify.js"></script>
-<script src="/js/materialize.js"></script>
-<script>$('pre').addClass('prettyprint linenums')</script>
 
-<script>
-    $('.blog-post-thumbnail').css("background-image", "url("+randthumbnail()+")");
+<body onload="PR.prettyPrint()">
+    <nav class="navbar is-fixed-top has-shadow is-spaced" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/thinking_face.png"width="30" height="30">
+      </a>
 
-    $('.card-image').each(function(){
-        $(this).children().attr('src',thumbnailPath());
-    })
-</script>
+      <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu" id="navMenu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/">
+          <span class="icon">
+            <i class="fas fa-star"></i>
+          </span>
+          <span>About Me</span>
+        </a>
+        <a class="navbar-item" href="/blog/">
+          <span class="icon">
+            <i class="fas fa-book"></i>
+          </span>
+          <span>Blog</span>
+        </a>
+      </div>
 
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="field is-grouped">
+            <a class="navbar-item" href="https://github.com/deephank">
+              <img src="/images/github.svg">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+    <div class="main">
+        <section class="section">
+            <div class="container">
+                <h1 class="title">籌備中</h1>
+<h2 class="subtitle">還在努力的想要寫什麼 ^_^</h2>
+<a class="button is-outlined" href="/blog/">先看看 blog</a>
+            </div>
+        </section>
+    </div>
+    <div class="footer">
+        <footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      powered by Hank
+    </p>
+  </div>
+</footer>
+    </div>
 
-<script>
-  $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
-
-   $('.fixed-action-btn').floatingActionButton({
-    direction: 'top',
-  });
-   $('.fixed-action-btn').floatingActionButton('open');
-</script>
+</body>
 </html>
+
+<script src="/js/footer.js"></script>
+<script src="/js/prettify.js"></script>

@@ -1,13 +1,11 @@
 <html>
 <head>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114741779-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-114741779-1');
     </script>
 
@@ -15,89 +13,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-    <meta property="og:title" content="IG 匿名問答 BuddyMeter 網頁漏洞 - 茶花本" />
+    <meta property="og:title" content="IG 匿名問答 BuddyMeter 網頁漏洞 - deephank" />
     
-
     
     <meta property="og:image"  content="https://luuuy.github.io/buddymeter-bug/6.png" />
     
 
-    <link rel="stylesheet" href="/css/materialize.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bulma.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/prettify.css">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    
-    <script>
-    var randomNum = Math.floor(Math.random()*15);
-    function randthumbnail(){
-        return "/images/"+randomNum+".png"
-    }
-
-    function thumbnailPath(){
-        randomNum++;
-        return "/images/"+ randomNum % 15+".png";
-    }
-
-    </script>
-
+    <script src="/js/fontawesome.js"></script>
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
     
-        <title>IG 匿名問答 BuddyMeter 網頁漏洞 - 茶花本</title>    
+        <title>IG 匿名問答 BuddyMeter 網頁漏洞 - deephank</title>    
     
     
 </head>
 
+<script src="/js/prettify.js"></script>
+
 <body onload="PR.prettyPrint()">
-    <a href="#" data-target="slide-out" class="sidenav-trigger">
-        <i class="Small material-icons">menu</i>
-    </a>
+    <nav class="navbar is-fixed-top has-shadow is-spaced" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/thinking_face.png"width="30" height="30">
+      </a>
 
-    <div class="container">
-    <nav>
-      <a href="/" class="brand-logo">茶花本</a>
-      <p class="description">茶花本是烏龍派出所裡 唬爛讀者出版社 的編輯</p>
-</nav>
-
-
-<ul id="slide-out" class="sidenav">
-    <li><div class="user-view">
-        <a href="/">
-      <div class="background">
-        <img src="/images/side-bg.jpg">
+      <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu" id="navMenu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/">
+          <span class="icon">
+            <i class="fas fa-star"></i>
+          </span>
+          <span>About Me</span>
+        </a>
+        <a class="navbar-item" href="/blog/">
+          <span class="icon">
+            <i class="fas fa-book"></i>
+          </span>
+          <span>Blog</span>
+        </a>
       </div>
-      <img class="circle" src="/images/avatar.png"></a>
-      <a href=""><span class="white-text name">Hank Lu</span></a>
-      <a href=""><span class="white-text email">s210215@shsh.tw</span></a>
-    </div></li>
-    <li><a href="https://github.com/" target="_blank"><i class="fab fa-github fa-2x"></i>GitHub</a></li>
-    <li><a href="https://medium.com/@luuuy" target="_blank"><i class="fab fa-medium fa-2x"></i>Medium</a></li>
-    <li><div class="divider"></div></li>
-    <li><a class="subheader center-align">CS student in TaiwanTech</a></li>
-</ul>
-  
-    <div class="row">
-    <div class="blog-post z-depth-1">
-        
-        <div class="blog-post-thumbnail">
-            
-            <a href="/buddymeter-bug/" class="blog-post-title">
-                <h1 >IG 匿名問答 BuddyMeter 網頁漏洞</h1>
-            </a>
-        </div>
 
-        <!-- Content -->
-        <div class="blog-post-content">
-        <span class="author">作者：Hank Lu</span>
-        <span class="last-update">最後更新：2018-05-24 </span>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="field is-grouped">
+            <a class="navbar-item" href="https://github.com/deephank">
+              <img src="/images/github.svg">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+    <div class="main">
+        <section class="section">
+            <div class="container">
+                <article>
+    <h1 class="title">IG 匿名問答 BuddyMeter 網頁漏洞</h1>
+    <h2 class="subtitle">
+        2018-06-29
+    </h2>
+
+    <div class="content">
         <p>最近很流行的 instagram 匿名問答網站 —— <a href="https://buddymeter.com/" target="_blank" rel="noopener">Buddymetter</a> ，每個人都在測試自己是不是邊緣人，結果還真的是邊緣人= = 不過因為方便使用加上快速流行，所以還是滿多人跟風的。</p>
 <a id="more"></a> 
 <h2 id="快速得到答案"><a href="#快速得到答案" class="headerlink" title="快速得到答案"></a>快速得到答案</h2><p>這個網站其實很陽春，只要開發人員工具打開就能拿到每一題的答案了。</p>
-<img src="/buddymeter-bug/1.png" class="slug">
+<img src="/blog/blog/buddymeter-bug/1.png" class="slug">
 <p>於是 Splitline 大大把他寫成了一個瀏覽器外掛（真是吃飽太閒= =）</p>
 <blockquote>
 <p>Chrome: <a href="https://goo.gl/y2Y259" target="_blank" rel="noopener">https://goo.gl/y2Y259</a><br>FireFox: <a href="https://goo.gl/DXhtPU" target="_blank" rel="noopener">https://goo.gl/DXhtPU</a> (支援手機版)<br>Github repo: <a href="https://github.com/splitline/buddymeter-cheater" target="_blank" rel="noopener">https://github.com/splitline/buddymeter-cheater</a></p>
@@ -110,7 +103,7 @@
 <li>有一個很長的 script element</li>
 <li>程式碼有被打亂過</li>
 </ul>
-<img src="/buddymeter-bug/3.png" class="slug">
+<img src="/blog/blog/buddymeter-bug/3.png" class="slug">
 <h3 id="把很長的-script-複製到-SublimeText-看一看"><a href="#把很長的-script-複製到-SublimeText-看一看" class="headerlink" title="把很長的 script 複製到 SublimeText 看一看"></a>把很長的 script 複製到 SublimeText 看一看</h3><p>原來各種 function 和 variable 都藏在這裡呢，變數名稱都被打亂了，有耐心一個一個 trace 的話其實很容易發現規則。</p>
 <ul>
 <li>_0x65bd 存著很多字串，大部分的東西都和他有關。</li>
@@ -122,7 +115,7 @@
 <li>question_number 目前的題數，大於總題數就會送出答案 </li>
 <li>載入頁面時從 firebase 撈題目和排行榜的資料出來。</li>
 </ul>
-<img src="/buddymeter-bug/4.png" class="slug">
+<img src="/blog/blog/buddymeter-bug/4.png" class="slug">
 <h3 id="送出到-firebase-的-function"><a href="#送出到-firebase-的-function" class="headerlink" title="送出到 firebase 的 function"></a>送出到 firebase 的 function</h3><pre><code class="Javascript">function send_score_to_firebase(score) {
     var _0x3d1ax37 = {};
     _0x3d1ax37[_0x65bd[144] + pollID + _0x65bd[145] + userID + _0x65bd[146]] = answerer_name;
@@ -159,13 +152,13 @@ def send_score(name,score):
 for i in range(10):
     send_score(&#39;hank&#39;, 9.87) #score is [0~11)的 float
 </code></pre>
-<img src="/buddymeter-bug/5.png" class="slug">
+<img src="/blog/blog/buddymeter-bug/5.png" class="slug">
 <h3 id="Local-Storage"><a href="#Local-Storage" class="headerlink" title="Local Storage"></a>Local Storage</h3><p>原本想要直接在 console 裡用 javascript call function 洗版，但由於每次 load 頁面時才會將 firebase 的資料存在 Local Storage ，所以一定要 clear 後 reload 才能以另一個使用者 id 出現在排行榜上，即便是無痕視窗也要手動清空才行呢。所以才用 selenium 來解這個問題。</p>
 <h2 id="結論"><a href="#結論" class="headerlink" title="結論"></a>結論</h2><p>明明就很想要有人來回，但又不好意思，只好說跟風一下 = =</p>
 <h2 id="補充"><a href="#補充" class="headerlink" title="補充"></a>補充</h2><p style="color: red">可以 XSS 呢。</p>
 
 <p>可以插入很多怪怪的東西，各種XSS攻城掠地（？</p>
-<img src="/buddymeter-bug/6.png" class="slug">
+<img src="/blog/blog/buddymeter-bug/6.png" class="slug">
 <p><div id="fb-root"></div></p>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -174,45 +167,23 @@ for i in range(10):
   js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0&appId=141647639903033&autoLogAppEvents=1';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-        </div>
-
-        <div class="fixed-action-btn">
-          <a class="btn-floating btn-large teal">
-            <i class="material-icons">add</i>
-          </a>
-          <ul>
-            <li><a class="btn-floating teal lighten-2" href="/"><i class="material-icons">home</i></a></li>
-            <li onclick="$('html,body').animate({scrollTop:0},'slow')">
-                <a class="btn-floating teal lighten-1"><i class="material-icons">keyboard_arrow_up</i></a>
-            </li>
-          </ul>
-        </div>
-
     </div>
-</div>
+</article>
+            </div>
+        </section>
     </div>
+    <div class="footer">
+        <footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      powered by Hank
+    </p>
+  </div>
+</footer>
+    </div>
+
 </body>
-<script src="/js/prettify.js"></script>
-<script src="/js/materialize.js"></script>
-<script>$('pre').addClass('prettyprint linenums')</script>
-
-<script>
-    $('.blog-post-thumbnail').css("background-image", "url("+randthumbnail()+")");
-
-    $('.card-image').each(function(){
-        $(this).children().attr('src',thumbnailPath());
-    })
-</script>
-
-
-<script>
-  $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
-
-   $('.fixed-action-btn').floatingActionButton({
-    direction: 'top',
-  });
-   $('.fixed-action-btn').floatingActionButton('open');
-</script>
 </html>
+
+<script src="/js/footer.js"></script>
+<script src="/js/prettify.js"></script>
