@@ -10,21 +10,59 @@ body{
 article,
 .blog-post{
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 800px;
 }
 
 .content img{
   margin: 10px;
-  border: 1px solid #aaaaaa;
   padding: 10px;
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 .content p,
-.content ul li{
+.content>ol li{
   font-size: 21px;
-  line-height: 1.7;
-  margin: 20px 0;
+  line-height: 2;
+  margin: 10px 0;
 }
 .content pre,
 .content blockquote{
   overflow: auto;
+}
+
+@media (min-width: 1280px) {
+  #toc {
+    position: fixed;
+    top:150px;
+    left: 100px;
+    max-width: 200px;
+  }
+  #toc a{
+    color: #333;
+  }
+  #toc a:hover{
+    color: #666;
+  }
+  .toc-item{
+    list-style:none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .toc-level-2>a>span{
+    font-weight: bold;
+  }
+  .toc-level-3{
+    margin-left: 10px;
+  }
+  .toc-level-4,
+  .toc-level-5,
+  .toc-level-6{
+    display: none;
+  }
+}
+
+.headerlink{
+  display: block;
+  height:120px;
+  margin:-120px 0 0;
+  visibility: hidden;
 }
