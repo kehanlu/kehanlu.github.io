@@ -9,6 +9,7 @@
       gtag('config', 'UA-114741779-1');
     </script>
 
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,6 +17,7 @@
     
 
     <!-- CSS -->
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
     <link rel="stylesheet" href="/css/bulma.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/prettify.css">
@@ -23,6 +25,8 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
+    
+        <title>tags - Deephank</title>
     
     
 </head>
@@ -62,7 +66,7 @@
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="field is-grouped">
-            <a class="navbar-item" href="https://github.com/deephank">
+            <a target="_blank" class="navbar-item" href="https://github.com/kehanlu">
               <img src="/images/github.svg">
             </a>
           </div>
@@ -83,7 +87,35 @@
     <div class="content">
         
     </div>
+
 </article>
+
+<div id="toc">
+  
+</div>
+
+
+<section class="section">
+    <div class="container">
+        <div class="comments">
+            
+        </div>
+    </div>
+</section>
+
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '页面 ID', // 可选。默认为 location.href
+  owner: 'kehanlu',
+  repo: 'kehanlu.github.io',
+  oauth: {
+    client_id: 'ab9a2a976727d1280778',
+    client_secret: 'd2ae4e759980df1644640761690e2c32d58c05b4',
+  },
+})
+gitment.render(document.getElementById('comments'))
+</script>
             </div>
         </section>
     </div>
