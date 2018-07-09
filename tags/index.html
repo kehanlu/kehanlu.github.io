@@ -97,7 +97,7 @@
 
 <section class="section">
     <div class="container">
-        <div class="comments">
+        <div id="comments">
             
         </div>
     </div>
@@ -105,8 +105,8 @@
 
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
-var gitment = new Gitment({
-  id: '页面 ID', // 可选。默认为 location.href
+var gitment = new Gitment(
+{
   owner: 'kehanlu',
   repo: 'kehanlu.github.io',
   oauth: {
