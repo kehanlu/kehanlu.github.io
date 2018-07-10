@@ -30,8 +30,12 @@ article,
   overflow: auto;
 }
 
+#toc{
+  display: none;
+}
 @media (min-width: 1280px) {
   #toc {
+    display: block;
     position: fixed;
     top:150px;
     left: 100px;
