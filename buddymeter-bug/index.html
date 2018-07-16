@@ -92,7 +92,7 @@
         <p>最近很流行的 instagram 匿名問答網站 —— <a href="https://buddymeter.com/" target="_blank" rel="noopener">Buddymetter</a> ，每個人都在測試自己是不是邊緣人，結果還真的是邊緣人= = 不過因為方便使用加上快速流行，所以還是滿多人跟風的。</p>
 <a id="more"></a> 
 <h2 id="快速得到答案"><a href="#快速得到答案" class="headerlink" title="快速得到答案"></a>快速得到答案</h2><p>這個網站其實很陽春，只要開發人員工具打開就能拿到每一題的答案了。</p>
-<img src="/blog/buddymeter-bug/1.png" class="slug">
+<img src="/buddymeter-bug/1.png" class="slug">
 <p>於是 Splitline 大大把他寫成了一個瀏覽器外掛（真是吃飽太閒= =）</p>
 <blockquote>
 <p>Chrome: <a href="https://goo.gl/y2Y259" target="_blank" rel="noopener">https://goo.gl/y2Y259</a><br>FireFox: <a href="https://goo.gl/DXhtPU" target="_blank" rel="noopener">https://goo.gl/DXhtPU</a> (支援手機版)<br>Github repo: <a href="https://github.com/splitline/buddymeter-cheater" target="_blank" rel="noopener">https://github.com/splitline/buddymeter-cheater</a></p>
@@ -105,7 +105,7 @@
 <li>有一個很長的 script element</li>
 <li>程式碼有被打亂過</li>
 </ul>
-<img src="/blog/buddymeter-bug/3.png" class="slug">
+<img src="/buddymeter-bug/3.png" class="slug">
 <h3 id="把很長的-script-複製到-SublimeText-看一看"><a href="#把很長的-script-複製到-SublimeText-看一看" class="headerlink" title="把很長的 script 複製到 SublimeText 看一看"></a>把很長的 script 複製到 SublimeText 看一看</h3><p>原來各種 function 和 variable 都藏在這裡呢，變數名稱都被打亂了，有耐心一個一個 trace 的話其實很容易發現規則。</p>
 <ul>
 <li>_0x65bd 存著很多字串，大部分的東西都和他有關。</li>
@@ -117,7 +117,7 @@
 <li>question_number 目前的題數，大於總題數就會送出答案 </li>
 <li>載入頁面時從 firebase 撈題目和排行榜的資料出來。</li>
 </ul>
-<img src="/blog/buddymeter-bug/4.png" class="slug">
+<img src="/buddymeter-bug/4.png" class="slug">
 <h3 id="送出到-firebase-的-function"><a href="#送出到-firebase-的-function" class="headerlink" title="送出到 firebase 的 function"></a>送出到 firebase 的 function</h3><pre><code class="Javascript">function send_score_to_firebase(score) {
     var _0x3d1ax37 = {};
     _0x3d1ax37[_0x65bd[144] + pollID + _0x65bd[145] + userID + _0x65bd[146]] = answerer_name;
@@ -154,13 +154,13 @@ def send_score(name,score):
 for i in range(10):
     send_score(&#39;hank&#39;, 9.87) #score is [0~11)的 float
 </code></pre>
-<img src="/blog/buddymeter-bug/5.png" class="slug">
+<img src="/buddymeter-bug/5.png" class="slug">
 <h3 id="Local-Storage"><a href="#Local-Storage" class="headerlink" title="Local Storage"></a>Local Storage</h3><p>原本想要直接在 console 裡用 javascript call function 洗版，但由於每次 load 頁面時才會將 firebase 的資料存在 Local Storage ，所以一定要 clear 後 reload 才能以另一個使用者 id 出現在排行榜上，即便是無痕視窗也要手動清空才行呢。所以才用 selenium 來解這個問題。</p>
 <h2 id="結論"><a href="#結論" class="headerlink" title="結論"></a>結論</h2><p>明明就很想要有人來回，但又不好意思，只好說跟風一下 = =</p>
 <h2 id="補充"><a href="#補充" class="headerlink" title="補充"></a>補充</h2><p style="color: red">可以 XSS 呢。</p>
 
 <p>可以插入很多怪怪的東西，各種XSS攻城掠地（？</p>
-<img src="/blog/buddymeter-bug/6.png" class="slug">
+<img src="/buddymeter-bug/6.png" class="slug">
 <p><div id="fb-root"></div></p>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
