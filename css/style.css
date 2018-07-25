@@ -21,8 +21,8 @@ article,
 }
 .content p,
 .content>ol li{
-  font-size: 21px;
-  line-height: 2;
+  font-size: 18px;
+  line-height: 1.7;
   margin: 10px 0;
 }
 .content pre,

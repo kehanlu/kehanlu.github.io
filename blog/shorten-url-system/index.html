@@ -209,6 +209,8 @@ var gitment = new Gitment({
   },
 })
 gitment.render(document.getElementById('comments'))
+
+$('meta[name="description"]').attr('content',$('.content p').first().text())
 </script>
             </div>
         </section>
