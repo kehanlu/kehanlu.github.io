@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 @font-face {
   font-family: 'Chancery';
   src: url("../fonts/chancery/apple-chancery-webfont.eot");
@@ -371,7 +372,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Source Code Pro", "Helvetica Neue", Arial, monospace;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -461,7 +462,7 @@ h6 {
   .header .logo-wrapper {
     float: left; }
     .header .logo-wrapper .logo {
-      font-size: 48px;
+      font-size: 27px;
       font-family: "Chancery", cursive, LiSu, sans-serif; }
   @media screen and (max-width: 800px) {
     .header .logo-wrapper {
@@ -524,7 +525,7 @@ h6 {
     .post .post-header .post-title {
       margin: 0;
       font-size: 27px;
-      font-weight: 400;
+      font-weight: 600;
       font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
     .post .post-header .post-link {
       display: inline-block;
@@ -621,6 +622,8 @@ h6 {
   .post .post-content h6 {
     font-weight: 400;
     font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
+  .post .post-content h2 {
+    font-weight: 600; }
   .post .post-content .headerlink:hover {
     border-bottom: 0; }
   .post .post-content .headerlink::before {
@@ -665,7 +668,7 @@ h6 {
         border: 1px double #f4efe1; }
   .post .post-content code, .post .post-content pre {
     padding: 7px;
-    font-size: 13px;
+    font-size: 14px;
     font-family: Consolas, Monaco, Menlo, Consolas, monospace;
     background: #f8f5ec; }
   .post .post-content code {
@@ -686,7 +689,7 @@ h6 {
         right: 0;
         left: 0;
         padding: 2px 7px;
-        font-size: 13px;
+        font-size: 14px;
         font-weight: bold;
         color: #b1b1b1;
         background: #f4efe1;
@@ -822,7 +825,7 @@ h6 {
       top: 0;
       width: 100%;
       padding: 2px 7px;
-      font-size: 13px;
+      font-size: 14px;
       font-weight: bold;
       color: #b1b1b1;
       background: #f4efe1;
@@ -848,7 +851,7 @@ h6 {
         margin: 0;
         padding: 30px 7px 10px; }
     .post .post-content .highlight .line {
-      height: 20px; }
+      height: 21px; }
     .post .post-content .highlight table, .post .post-content .highlight tr, .post .post-content .highlight td {
       margin: 0;
       padding: 0;
