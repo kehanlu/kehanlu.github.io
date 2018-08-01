@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /tags/
 Disallow: /page/
 Disallow: /categories/
-Sitemap: https://hanklu.tw/sitemap.xml
+Sitemap: https://blog.hanklu.tw/sitemap.xml

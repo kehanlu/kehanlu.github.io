@@ -2,39 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://hanklu.tw/blog/advice-for-university-application/</loc>
+    <loc>https://blog.hanklu.tw/advice-for-university-application/</loc>
     
     <lastmod>2018-08-01T07:48:28.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hanklu.tw/blog/buddymeter-bug/</loc>
+    <loc>https://blog.hanklu.tw/buddymeter-bug/</loc>
     
     <lastmod>2018-08-01T07:46:08.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hanklu.tw/blog/shorten-url-system/</loc>
+    <loc>https://blog.hanklu.tw/shorten-url-system/</loc>
     
     <lastmod>2018-08-01T07:44:32.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hanklu.tw/</loc>
+    <loc>https://blog.hanklu.tw/tags/</loc>
     
-    <lastmod>2018-08-01T09:00:00.000Z</lastmod>
+    <lastmod>2018-02-10T06:18:40.000Z</lastmod>
     
   </url>
-  
+
   <url>
-    <loc>https://hanklu.tw/blog/</loc>
+    <loc>https://blog.hanklu.tw</loc>
     
-    <lastmod>2018-08-01T09:00:00.000Z</lastmod>
+    <lastmod>2018-08-01T07:44:32.000Z</lastmod>
     
   </url>
-  
   
 </urlset>
