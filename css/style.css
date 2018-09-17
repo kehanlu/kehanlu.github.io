@@ -366,7 +366,7 @@ th {
   padding: 0; }
 
 html {
-  font-size: 16px;
+  font-size: 18px;
   box-sizing: border-box; }
 
 body {
@@ -403,27 +403,27 @@ a {
   text-decoration: none; }
 
 h1 {
-  font-size: 26px;
+  font-size: 28px;
   font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
 
 h2 {
-  font-size: 24px;
+  font-size: 26px;
   font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
 
 h3 {
-  font-size: 20px;
+  font-size: 22px;
   font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
 
 h4 {
-  font-size: 16px;
+  font-size: 18px;
   font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
 
 h5 {
-  font-size: 14px;
+  font-size: 16px;
   font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
 
 h6 {
-  font-size: 14px;
+  font-size: 16px;
   font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
 
 .container {
@@ -623,7 +623,11 @@ h6 {
     font-weight: 400;
     font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
   .post .post-content h2 {
-    font-weight: 600; }
+    font-weight: 600;
+    color: #ba3851; }
+  .post .post-content h3 {
+    margin-top: 40px;
+    font-weight: 800; }
   .post .post-content .headerlink:hover {
     border-bottom: 0; }
   .post .post-content .headerlink::before {
