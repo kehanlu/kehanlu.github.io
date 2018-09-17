@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+
+  <meta name="description" content="聊天機器人不只能一問一答，使用有限狀態機的思考方式，我們可以很容易的設計出情境式的聊天機器人。"/>
+
+
+
+
+  <meta name="keywords" content="python, chatbot, finite-state-machine, Hank.log" />
+
+
+
+
+
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Hank.log">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.9.0" />
+
+
+
+<link rel="canonical" href="https://blog.hanklu.tw/chatbot-structure-design-fsm/"/>
+
+
+
+  <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" />
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/lib/nprogress/nprogress.min.css" />
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.9.0" />
+
+
+
+  
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114741779-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114741779-1');
+</script>
+
+
+  
+
+
+
+
+
+
+
+<script>
+  window.config = {"title":"Hank.log","subtitle":"python, web and DL.","description":"記錄程式設計筆記、心得與想法，分享自己實作的小專案。正在使用 Python 進行網頁開發。","author":"Hank Lu","language":"en","timezone":"Asia/Taipei","url":"https://blog.hanklu.tw","root":"/","permalink":"/:title/","permalink_defaults":null,"source_dir":"source","public_dir":"public","tag_dir":"tags","archive_dir":"archives","category_dir":"categories","code_dir":"downloads/code","i18n_dir":":lang","skip_render":null,"new_post_name":":title.md","default_layout":"index","titlecase":false,"external_link":true,"filename_case":0,"render_drafts":false,"post_asset_folder":false,"relative_link":false,"future":true,"highlight":{"enable":true,"auto_detect":true,"line_number":true,"tab_replace":null,"first_line_number":"always1"},"default_category":"uncategorized","category_map":null,"tag_map":null,"date_format":"YYYY-MM-DD","time_format":"HH:mm:ss","per_page":10,"pagination_dir":"page","theme":"even","deploy":{"type":"git","repo":"https://github.com/kehanlu/kehanlu.github.io.git","branch":"master"},"ignore":[],"index_generator":{"per_page":20,"order_by":"-date","path":""},"sitemap":{"path":"sitemap.xml"},"archive_generator":{"per_page":10,"yearly":true,"monthly":true,"daily":false},"category_generator":{"per_page":10},"tag_generator":{"per_page":10},"marked":{"gfm":true,"pedantic":false,"sanitize":false,"tables":true,"breaks":true,"smartLists":true,"smartypants":true,"modifyAnchors":"","autolink":true},"server":{"port":4000,"log":false,"ip":"0.0.0.0","compress":false,"header":true},"since":2018,"favicon":"/favicon.ico","rss":false,"menu":{"Home":"/","Archives":"/archives/","About":"https://hanklu.tw"},"color":"Default","toc":true,"fancybox":true,"pjax":true,"copyright":{"enable":false,"license":"<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc/4.0/\" target=\"_blank\">知识共享署名-非商业性使用 4.0 国际许可协议</a>"},"reward":{"enable":false,"qrCode":{"wechat":null,"alipay":null}},"social":{"email":"s210215@shsh.tw","stack-overflow":null,"twitter":null,"facebook":null,"linkedin":null,"google":null,"github":"https://github.com/kehanlu","weibo":null,"zhihu":null,"douban":null,"pocket":null,"tumblr":null,"instagram":null},"leancloud":{"app_id":null,"app_key":null},"baidu_analytics":null,"baidu_verification":null,"google_analytics":"UA-114741779-1","google_verification":null,"disqus_shortname":null,"changyan":{"appid":null,"appkey":null},"livere_datauid":null,"version":"2.9.0"};
+</script>
+
+    <title>情境聊天機器人設計：有限狀態機 - Hank.log</title>
+  </head>
+
+  <body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/." class="logo">Hank.log</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    
+      <a href="/">
+        <li class="mobile-menu-item">
+          
+          
+            Home
+          
+        </li>
+      </a>
+    
+      <a href="/archives/">
+        <li class="mobile-menu-item">
+          
+          
+            Archives
+          
+        </li>
+      </a>
+    
+      <a href="https://hanklu.tw">
+        <li class="mobile-menu-item">
+          
+          
+            About
+          
+        </li>
+      </a>
+    
+  </ul>
+</nav>
+
+    <div class="container" id="mobile-panel">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">Hank.log</a>
+</div>
+
+<nav class="site-navbar">
+  
+    <ul id="menu" class="menu">
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/">
+            
+            
+              Home
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/archives/">
+            
+            
+              Archives
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="https://hanklu.tw">
+            
+            
+              About
+            
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+
+      </header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content">
+            
+  
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          情境聊天機器人設計：有限狀態機
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2018-09-17
+        </span>
+        
+          <div class="post-category">
+            
+              <a href="/categories/chatbot/">chatbot</a>
+            
+          </div>
+        
+        
+      </div>
+    </header>
+
+    
+    
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">Contents</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#聊天機器人"><span class="toc-text">聊天機器人</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#有限狀態機"><span class="toc-text">有限狀態機</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#情境聊天機器人設計"><span class="toc-text">情境聊天機器人設計</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#討論"><span class="toc-text">討論</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#有限的狀態"><span class="toc-text">有限的狀態</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#判斷器"><span class="toc-text">判斷器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#簡單的-code"><span class="toc-text">簡單的 code</span></a></li></ol></li></ol>
+    </div>
+  </div>
+
+
+
+    <div class="post-content">
+      
+        <p>聊天機器人不只能一問一答，使用有限狀態機的思考方式，我們可以很容易的設計出情境式的聊天機器人。</p>
+<a id="more"></a>
+<h2 id="聊天機器人"><a href="#聊天機器人" class="headerlink" title="聊天機器人"></a>聊天機器人</h2><p>傳統的聊天機器人是分析 Q 之後，藉由撈資料庫、爬蟲、自動生成等等，回答出 A<br><img src="https://i.imgur.com/ydthu8L.png" alt=""></p>
+<p>但人類對話時，並不是一問一答的形式。我們會延續前一句話、圍饒在一個<strong>話題</strong>。當我接著問「明天呢？」，我們期待對方會延續前句話的<strong>情境</strong>繼續說下去。<br><img src="https://i.imgur.com/aNNFK9c.png" alt=""></p>
+<h3 id="有限狀態機"><a href="#有限狀態機" class="headerlink" title="有限狀態機"></a>有限狀態機</h3><p>有限狀態機，Finite State Machine(<strong>FSM</strong>)，是表示有限個狀態以及在這些狀態之間的轉移和動作等行為的數學模型。</p>
+<p>如：門的行為可以畫成有限狀態機，如果門<strong>開著</strong>(狀態)，可以由<strong>關起來</strong>(動作)，讓門的狀態變成「關著」的。</p>
+<p><img src="https://i.imgur.com/GXsrOjg.png" alt=""></p>
+<h3 id="情境聊天機器人設計"><a href="#情境聊天機器人設計" class="headerlink" title="情境聊天機器人設計"></a>情境聊天機器人設計</h3><p>藉由「有限」、「狀態」等特性，我們可以模仿 FSM 設計出一個情境的聊天機器人。我們把剛剛的對話畫成一張有向強連通圖。</p>
+<p>我們將每次對話的 state 存起來(預設為default)，在下一個問題進來時，從該 state 出發，判斷跳往下一個 state，然後透過各別的方式生成答案。</p>
+<p><img src="https://i.imgur.com/K2OunzM.png" alt=""></p>
+<h2 id="討論"><a href="#討論" class="headerlink" title="討論"></a>討論</h2><h3 id="有限的狀態"><a href="#有限的狀態" class="headerlink" title="有限的狀態"></a>有限的狀態</h3><p>如果使用這個架構，我們必須把行為設定在有限的情境裡面，所以如果要做出接近人類的機器人，我們需要先設計非常多的「情境」。</p>
+<p>另一個方面，由於我們已經在某一個情境中，所以我們可以縮小範圍，專注於設計這個情境的演算法：如「天氣：爬蟲」、「問答：用ML方法生成」、「知識：撈資料庫」⋯⋯</p>
+<h3 id="判斷器"><a href="#判斷器" class="headerlink" title="判斷器"></a>判斷器</h3><p>畫出來的圖是一張強連通圖，任何一個Vertice都有 in&amp;out。且任何 Question 都必須能跳往某個情境(if-elif-<strong>else</strong>)。</p>
+<p>製作良好的<strong>判斷器</strong>是非常難的，我們希望「今天會下雨嗎」、「今天天氣如何」、「今天熱嗎」代表的是同一件事，本篇的範例是用 <code>if Q==something</code>的方式，顯然這非常不好用。</p>
+<p>所以必須額外用各種自然語言處理的方法兜出一個好的判斷器，不論是斷詞、TFIDF、餘弦相似、word embedding、RNN…都是需要花很多時間實驗的。</p>
+<h3 id="簡單的-code"><a href="#簡單的-code" class="headerlink" title="簡單的 code"></a>簡單的 code</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">change_state</span><span class="params">(state,question)</span></span></span><br><span class="line">    if state == "weather":</span><br><span class="line">        <span class="keyword">if</span> question == <span class="string">"明天呢?"</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="string">"weather_tomorrow"</span></span><br><span class="line">        <span class="keyword">elif</span> question == <span class="string">"星座運勢呢?"</span></span><br><span class="line">            <span class="keyword">return</span> <span class="string">"star_signs_tomorrow"</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="string">"default"</span></span><br><span class="line">    <span class="comment"># ...略</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">generate_answer</span><span class="params">(state,question)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> state == <span class="string">"weather"</span>:</span><br><span class="line">        <span class="comment"># 爬蟲 --&gt; 晴時多雲偶陣雨</span></span><br><span class="line">        <span class="keyword">return</span> <span class="string">"晴時多雲偶陣雨"</span></span><br><span class="line">    <span class="keyword">elif</span> state == <span class="string">"weather_tomorrow"</span>:</span><br><span class="line">        <span class="comment"># 爬蟲 --&gt; 超熱，需要小心雷陣雨</span></span><br><span class="line">        <span class="keyword">return</span> <span class="string">"超熱，需要小心雷陣雨"</span></span><br><span class="line">    <span class="comment"># ...略</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">state = <span class="string">"default"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span>(<span class="keyword">True</span>):</span><br><span class="line">    question = input(<span class="string">"問題："</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 判別器：從目前的 state 跳往其他 state</span></span><br><span class="line">    state = change_state(state,question)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 各個 state 的回答</span></span><br><span class="line">    answer = generate_answer(state,question)</span><br><span class="line">    print(answer)</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+      
+      
+
+
+
+      
+      
+    
+
+    
+      <footer class="post-footer">
+        
+          <div class="post-tags">
+            
+              <a href="/tags/python/">python</a>
+            
+              <a href="/tags/chatbot/">chatbot</a>
+            
+              <a href="/tags/finite-state-machine/">finite-state-machine</a>
+            
+          </div>
+        
+        
+        
+  <nav class="post-nav">
+    
+    
+      <a class="next" href="/shorten-url-system/">
+        <span class="next-text nav-default">短網址系統開發心得</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
+
+      </footer>
+    
+
+  </article>
+
+
+          </div>
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+      </main>
+
+      <footer id="footer" class="footer">
+
+  <div class="social-links">
+    
+      
+        
+          <a href="mailto:s210215@shsh.tw" class="iconfont icon-email" title="email"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+          <a href="https://github.com/kehanlu" class="iconfont icon-github" title="github"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+  </div>
+
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
+    
+    &copy; 
+    
+    2018
+
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Hank Lu</span>
+  </span>
+</div>
+
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+
+    
+  
+  
+
+  
+
+
+
+    
+  
+
+
+
+  
+  
+
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/fancybox/jquery.fancybox.pack.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/pjax/jquery.pjax.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/nprogress/nprogress.min.js"></script>
+  
+
+
+    <script type="text/javascript" src="/js/src/even.js?v=2.9.0"></script>
+
+  </body>
+</html>
