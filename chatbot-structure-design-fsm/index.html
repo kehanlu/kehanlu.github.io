@@ -82,7 +82,7 @@
 
 
 <script>
-  window.config = {"title":"Hank.log","subtitle":"python, web and DL.","description":"記錄程式設計筆記、心得與想法，分享自己實作的小專案。正在使用 Python 進行網頁開發。","author":"Hank Lu","language":"en","timezone":"Asia/Taipei","url":"https://blog.hanklu.tw","root":"/","permalink":"/:title/","permalink_defaults":null,"source_dir":"source","public_dir":"public","tag_dir":"tags","archive_dir":"archives","category_dir":"categories","code_dir":"downloads/code","i18n_dir":":lang","skip_render":null,"new_post_name":":title.md","default_layout":"index","titlecase":false,"external_link":true,"filename_case":0,"render_drafts":false,"post_asset_folder":false,"relative_link":false,"future":true,"highlight":{"enable":true,"auto_detect":true,"line_number":true,"tab_replace":null,"first_line_number":"always1"},"default_category":"uncategorized","category_map":null,"tag_map":null,"date_format":"YYYY-MM-DD","time_format":"HH:mm:ss","per_page":10,"pagination_dir":"page","theme":"even","deploy":{"type":"git","repo":"https://github.com/kehanlu/kehanlu.github.io.git","branch":"master"},"ignore":[],"index_generator":{"per_page":20,"order_by":"-date","path":""},"sitemap":{"path":"sitemap.xml"},"archive_generator":{"per_page":10,"yearly":true,"monthly":true,"daily":false},"category_generator":{"per_page":10},"marked":{"gfm":true,"pedantic":false,"sanitize":false,"tables":true,"breaks":true,"smartLists":true,"smartypants":true,"modifyAnchors":"","autolink":true},"tag_generator":{"per_page":10},"server":{"port":4000,"log":false,"ip":"0.0.0.0","compress":false,"header":true},"since":2018,"favicon":"/favicon.ico","rss":false,"menu":{"Home":"/","Archives":"/archives/","About":"https://hanklu.tw"},"color":"Default","toc":true,"fancybox":true,"pjax":true,"copyright":{"enable":false,"license":"<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc/4.0/\" target=\"_blank\">知识共享署名-非商业性使用 4.0 国际许可协议</a>"},"reward":{"enable":false,"qrCode":{"wechat":null,"alipay":null}},"social":{"email":"s210215@shsh.tw","stack-overflow":null,"twitter":null,"facebook":null,"linkedin":null,"google":null,"github":"https://github.com/kehanlu","weibo":null,"zhihu":null,"douban":null,"pocket":null,"tumblr":null,"instagram":null},"leancloud":{"app_id":null,"app_key":null},"baidu_analytics":null,"baidu_verification":null,"google_analytics":"UA-114741779-1","google_verification":null,"disqus_shortname":null,"changyan":{"appid":null,"appkey":null},"livere_datauid":null,"version":"2.9.0"};
+  window.config = {"title":"Hank.log","subtitle":"python, web and DL.","description":"記錄程式設計筆記、心得與想法，分享自己實作的小專案。正在使用 Python 進行網頁開發。","author":"Hank Lu","language":"en","timezone":"Asia/Taipei","url":"https://blog.hanklu.tw","root":"/","permalink":"/:title/","permalink_defaults":null,"source_dir":"source","public_dir":"public","tag_dir":"tags","archive_dir":"archives","category_dir":"categories","code_dir":"downloads/code","i18n_dir":":lang","skip_render":null,"new_post_name":":title.md","default_layout":"index","titlecase":false,"external_link":true,"filename_case":0,"render_drafts":false,"post_asset_folder":false,"relative_link":false,"future":true,"highlight":{"enable":true,"auto_detect":true,"line_number":true,"tab_replace":null},"default_category":"uncategorized","category_map":null,"tag_map":null,"date_format":"YYYY-MM-DD","time_format":"HH:mm:ss","per_page":10,"pagination_dir":"page","theme":"even","deploy":{"type":"git","repo":"https://github.com/kehanlu/kehanlu.github.io.git","branch":"master"},"ignore":[],"index_generator":{"per_page":20,"order_by":"-date","path":""},"sitemap":{"path":"sitemap.xml"},"category_generator":{"per_page":10},"archive_generator":{"per_page":10,"yearly":true,"monthly":true,"daily":false},"tag_generator":{"per_page":10},"marked":{"gfm":true,"pedantic":false,"sanitize":false,"tables":true,"breaks":true,"smartLists":true,"smartypants":true,"modifyAnchors":"","autolink":true},"server":{"port":4000,"log":false,"ip":"0.0.0.0","compress":false,"header":true},"since":2018,"favicon":"/favicon.ico","rss":false,"menu":{"Home":"/","Archives":"/archives/","About":"https://hanklu.tw"},"color":"Default","toc":true,"fancybox":true,"pjax":true,"copyright":{"enable":false,"license":"<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc/4.0/\" target=\"_blank\">知识共享署名-非商业性使用 4.0 国际许可协议</a>"},"reward":{"enable":false,"qrCode":{"wechat":null,"alipay":null}},"social":{"email":"s210215@shsh.tw","stack-overflow":null,"twitter":null,"facebook":null,"linkedin":null,"google":null,"github":"https://github.com/kehanlu","weibo":null,"zhihu":null,"douban":null,"pocket":null,"tumblr":null,"instagram":null},"leancloud":{"app_id":null,"app_key":null},"baidu_analytics":null,"baidu_verification":null,"google_analytics":"UA-114741779-1","google_verification":null,"disqus_shortname":"hank-log","changyan":{"appid":null,"appkey":null},"livere_datauid":null,"version":"2.9.0"};
 </script>
 
     <title>情境聊天機器人設計：有限狀態機 - Hank.log</title>
@@ -215,7 +215,8 @@
 
     <div class="post-content">
       
-        <p>聊天機器人不只能一問一答，使用有限狀態機的思考方式，可以很容易的設計出情境式的聊天機器人。</p>
+        <p>人類在說話的時候通常會根據目前所在的話題（情境）去做接續的回應，將有限狀態機的形式應用在聊天機器人，就能做出能根據現有狀態做回應的機器人了呢～</p>
+<p>😕 我想吃飯<br>🤖 吃學餐<br>😕 可是很多人耶<br>🤖 那就不要吃ㄅ<br>😕 怒<br>🤖 喵</p>
 <a id="more"></a>
 <h2 id="聊天機器人"><a href="#聊天機器人" class="headerlink" title="聊天機器人"></a>聊天機器人</h2><p>傳統的聊天機器人是分析 Q 之後，藉由撈資料庫、爬蟲、自動生成等等，回答出 A<br><img src="https://i.imgur.com/ydthu8L.png" alt=""></p>
 <p>但人類對話時，並不是一問一答的形式。我們會延續前一句話、圍饒在一個<strong>話題</strong>。當我接著問「明天呢？」，我們期待對方會延續前句話的<strong>情境</strong>繼續說下去。<br><img src="https://i.imgur.com/aNNFK9c.png" alt=""></p>
@@ -284,6 +285,13 @@
           </div>
           
   <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
     
   </div>
 
@@ -366,6 +374,22 @@
 
     
   
+  <script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://blog.hanklu.tw/chatbot-structure-design-fsm/';
+        this.page.identifier = '/chatbot-structure-design-fsm/';
+        this.page.title = '情境聊天機器人設計：有限狀態機';
+    };
+    (function() {
+    var d = document, s = d.createElement('script');
+
+    s.src = '//hank-log.disqus.com/embed.js';
+
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();  
+  </script>
+
   
 
   
