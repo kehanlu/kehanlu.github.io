@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | Hank Lu</title>
+    <link>/project/</link>
+      <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Projects</title>
+      <link>/project/</link>
+    </image>
+    
+    <item>
+      <title>大手攜小手物聯網競賽報名網站</title>
+      <link>/project/iot2gather/</link>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/project/iot2gather/</guid>
+      <description>&lt;p&gt;&lt;code&gt;2019/04 ~&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;由臺灣科技大學舉辦的第一屆大手攜小手物聯網競賽報名及評審評分系統。&lt;/p&gt;
+&lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Backend: Python&lt;/li&gt;
+&lt;li&gt;Frontend: Html, Css, Javascript&lt;/li&gt;
+&lt;li&gt;UI framework:&lt;/li&gt;
+&lt;li&gt;Server: Ubuntu, nginx, uwsgi&lt;/li&gt;
+&lt;li&gt;三人小組合作完成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;sreenshots&#34;&gt;Sreenshots&lt;/h2&gt;
+&lt;p&gt;首頁
+&lt;img src=&#34;screenshot1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;報名頁面
+&lt;img src=&#34;screenshot2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>政大金旋獎報名網站</title>
+      <link>/project/goldenmelody/</link>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/project/goldenmelody/</guid>
+      <description>&lt;p&gt;&lt;code&gt;2018~&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;製作第 35,36,37 屆金旋獎報名網站(2018~2020)，金旋獎為台灣知名音樂比賽，每年吸引數百組學生團體參加比賽。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.facebook.com/nccugoldenmelody&#34;&gt;金旋獎 Facebook&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Backend: Python(Django2)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Frontend: Html, Css, Javascript&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CSS framework: Tocas UI(35th), Bulma(36th,37th)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Server: Ubuntu, nginx, uwsgi&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Other: Google OAuth&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;介面設計 UX&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;系統規劃&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;sreenshots&#34;&gt;Sreenshots&lt;/h2&gt;
+&lt;p&gt;報名頁面
+&lt;img src=&#34;screenshot1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;參賽者後台
+&lt;img src=&#34;screenshot2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;管理者後台
+&lt;img src=&#34;screenshot3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>併校小幫手</title>
+      <link>/project/merge-uni/</link>
+      <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>/project/merge-uni/</guid>
+      <description>&lt;p&gt;&lt;code&gt;2019&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;選取的時候會出現該校的資料，若選大於兩個，就會顯示學校合併之後的科系統計。&lt;/p&gt;
+&lt;p&gt;項目：學生數, 專任教師, 生師比, 男女比, 註冊率, 全校總經費, 承接計畫經費, 校舍樓地板面積, 校地面積, 領域, 學門, 學類, 系所。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://hackmd.io/@hanklutw/By7vG24zH&#34;&gt;Document&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/kehanlu/University&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Backend: Python(django)&lt;/li&gt;
+&lt;li&gt;Frontend: Html, Css, Javascript&lt;/li&gt;
+&lt;li&gt;Server: Ubuntu, nginx, uwsgi&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;sreenshots&#34;&gt;Sreenshots&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;screenshot1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Youbike 站點分析預測及排程</title>
+      <link>/project/youbike/</link>
+      <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>/project/youbike/</guid>
+      <description>&lt;p&gt;&lt;code&gt;2018-2 《資料科學導論》期末專題, 成績: A+&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;公館地區是 Youbike 租借熱區，時常會有無⾞車車可借或無地可還的問題。這個專題以台北市資料開放平臺 每⽉月 200 萬筆 Youbike 租借資料及站點地理理資料，透過 RNN 預測未來來熱⾨門站點，以最短距離優先、 Kmeans 等策略略模擬補給卡⾞車車的排程，最終以 Leaflet.js 將我們所得到的結果視覺化在地圖上。&lt;/p&gt;
+&lt;h3 id=&#34;tools&#34;&gt;Tools&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;pandas, numpy&lt;/li&gt;
+&lt;li&gt;folium &lt;a href=&#34;https://blog.hanklu.tw/post/2019/folium/&#34;&gt;[地理資料視覺化使用 folium]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;keras&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;slide&#34;&gt;Slide&lt;/h2&gt;
+&lt;iframe src=&#34;https://docs.google.com/presentation/d/e/2PACX-1vT7O1IVdKvW6dyhHobM-H6jmlfjfrPo6rdaK7xhqVJS0myR4MiaHMahkxlNDXm56IE2XzrxxQfzfLU4/embed?start=false&amp;loop=true&amp;delayms=3000&#34; frameborder=&#34;0&#34; width=&#34;960&#34; height=&#34;569&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[Tacabro]臺科的社群網站</title>
+      <link>/project/tacabro/</link>
+      <pubDate>Thu, 03 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/project/tacabro/</guid>
+      <description>&lt;p&gt;&lt;code&gt;2018-2《軟體工程》期末專題, 成績: A+&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;不使⽤用框架使⽤用物件導向語⾔言實作 MVC 架構，製作類 Facebook 的討論區及好友系統。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://taiwan-te.ch/&#34;&gt;https://taiwan-te.ch/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/AcademiaMeow/Tacobro&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/gRCyGP_EkgA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h2&gt;
+&lt;p&gt;登入
+&lt;img src=&#34;%E7%99%BB%E5%85%A5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;動態
+&lt;img src=&#34;%E5%8B%95%E6%85%8B%E6%99%82%E5%A0%B1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;看板
+&lt;img src=&#34;%E9%96%92%E8%81%8A.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;個人頁面
+&lt;img src=&#34;applepie.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Github commit
+&lt;img src=&#34;github.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>/projects/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NBA 明星賽預測</title>
+      <link>/project/nba-allstar/</link>
+      <pubDate>Sat, 15 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/project/nba-allstar/</guid>
+      <description>&lt;p&gt;&lt;code&gt;2018-1《深度學習原理理與實務概論》期末專題期末專題, 成績: A&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;我們猜測球員數據和球員是否獲選成正相關，透過爬蟲蒐集近 20 年年內所有球員的數據，共 3527 名球員、83 項數據。用深度神經網路預測該球員是否會入選明星賽。這個專題中主要的問題在處理不平衡資料，只有極少數的球員可以入選明星賽，我們嘗試透過 sampling 或 class weight 的⽅方法得到了了比較好的結果。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.hanklu.tw/post/2019/nba-allstar-predict/&#34;&gt;Blog post&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;tools&#34;&gt;Tools&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Pandas&lt;/li&gt;
+&lt;li&gt;Keras&lt;/li&gt;
+&lt;li&gt;Selenium&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TEDxNTUST 官方網站</title>
+      <link>/project/tedxntust/</link>
+      <pubDate>Sun, 28 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>/project/tedxntust/</guid>
+      <description>&lt;p&gt;&lt;code&gt;2018&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;2018 TEDxNTUST 官方網站。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://tedxntust.com&#34;&gt;tedxntust.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://fb.me/tedxntust&#34;&gt;TEDxNTUST Facebook&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Backend: Python&lt;/li&gt;
+&lt;li&gt;Frontend: Html, Css, Javascript&lt;/li&gt;
+&lt;li&gt;CSS framework: Bulma&lt;/li&gt;
+&lt;li&gt;Server: Ubuntu, nginx, uwsgi&lt;/li&gt;
+&lt;li&gt;介面設計 UX&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;sreenshots&#34;&gt;Sreenshots&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;screenshot1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;screenshot2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;screenshot3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

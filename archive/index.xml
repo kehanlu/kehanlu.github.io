@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Archives | Hank Lu</title>
+    <link>/archive/</link>
+      <atom:link href="/archive/index.xml" rel="self" type="application/rss+xml" />
+    <description>Archives</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Archives</title>
+      <link>/archive/</link>
+    </image>
+    
+    <item>
+      <title></title>
+      <link>/archive/slider/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/archive/slider/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Academic</title>
+      <link>/archive/hero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/archive/hero/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;The Best Way to Create the Website You Want from Markdown (or Jupyter/RStudio)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Build &lt;strong&gt;Anything&lt;/strong&gt; with Widgets&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;text-shadow: none;&#34;&gt;&lt;a class=&#34;github-button&#34; href=&#34;https://github.com/gcushen/hugo-academic&#34; data-icon=&#34;octicon-star&#34; data-size=&#34;large&#34; data-show-count=&#34;true&#34; aria-label=&#34;Star this on GitHub&#34;&gt;Star&lt;/a&gt;&lt;script async defer src=&#34;https://buttons.github.io/buttons.js&#34;&gt;&lt;/script&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Academic Kickstart</title>
+      <link>/archive/demo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/archive/demo/</guid>
+      <description>&lt;p&gt;Welcome to the &lt;strong&gt;Academic Kickstart&lt;/strong&gt; template!&lt;/p&gt;
+&lt;p&gt;Follow our &lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34;&gt;Getting Started&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/docs/widgets/&#34;&gt;Page Builder&lt;/a&gt; guides to easily personalize the template and then &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/&#34;&gt;add your own content&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For inspiration, check out &lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#demo-content&#34;&gt;the Markdown files&lt;/a&gt; which power the &lt;a href=&#34;https://academic-demo.netlify.com/&#34;&gt;personal demo&lt;/a&gt;. The easiest way to publish your new site to the internet is with &lt;a href=&#34;https://sourcethemes.com/academic/docs/deployment/&#34;&gt;Netlify&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34;&gt;View the documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://discuss.gohugo.io/&#34;&gt;Ask a question&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34;&gt;Request a feature or report a bug&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Updating? View the &lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34;&gt;Update Guide&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/updates/&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support development of Academic:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://paypal.me/cushen&#34;&gt;Donate a coffee&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.patreon.com/cushen&#34;&gt;Become a backer on Patreon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.redbubble.com/people/neutreno/works/34387919-academic&#34;&gt;Decorate your laptop or journal with an Academic sticker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://academic.threadless.com/&#34;&gt;Wear the T-shirt&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;This homepage section is an example of adding &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;elements&lt;/a&gt; to the &lt;a href=&#34;https://sourcethemes.com/academic/docs/widgets/&#34;&gt;&lt;em&gt;Blank&lt;/em&gt; widget&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Backgrounds can be applied to any section. Here, the &lt;em&gt;background&lt;/em&gt; option is set give a &lt;em&gt;color gradient&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;To remove this section, delete &lt;code&gt;content/home/demo.md&lt;/code&gt;.&lt;/strong&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Skills</title>
+      <link>/archive/skills/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/archive/skills/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Experience</title>
+      <link>/archive/old_experience/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/archive/old_experience/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent Posts</title>
+      <link>/archive/posts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/archive/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Meet the Team</title>
+      <link>/archive/people/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/archive/people/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>/archive/talks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/archive/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Featured Publications</title>
+      <link>/archive/featured/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/archive/featured/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Popular Topics</title>
+      <link>/archive/tags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/archive/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>/archive/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/archive/contact/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

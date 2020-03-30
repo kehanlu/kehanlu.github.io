@@ -1,0 +1,18 @@
+{
+  "name": "Hank Lu",
+  "short_name": "Hank Lu",
+  "lang": "en-us",
+  "theme_color": "#2962ff",
+  "background_color": "#2962ff",
+  "icons": [{
+    "src": "/images/icon_hue6ba901cd56e7b09d6d8ef6051fb3add_69714_192x192_fill_lanczos_center_2.png",
+    "sizes": "192x192",
+    "type": "image/png"
+    }, {
+    "src": "/images/icon_hue6ba901cd56e7b09d6d8ef6051fb3add_69714_512x512_fill_lanczos_center_2.png",
+    "sizes": "512x512",
+    "type": "image/png"
+     }],
+  "display": "standalone",
+  "start_url": "/?utm_source=web_app_manifest"
+}

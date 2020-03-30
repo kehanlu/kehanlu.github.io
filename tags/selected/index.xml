@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>selected | Hank Lu</title>
+    <link>/tags/selected/</link>
+      <atom:link href="/tags/selected/index.xml" rel="self" type="application/rss+xml" />
+    <description>selected</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 29 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>selected</title>
+      <link>/tags/selected/</link>
+    </image>
+    
+    <item>
+      <title>政大金旋獎報名網站</title>
+      <link>/project/goldenmelody/</link>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/project/goldenmelody/</guid>
+      <description>&lt;p&gt;&lt;code&gt;2018~&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;製作第 35,36,37 屆金旋獎報名網站(2018~2020)，金旋獎為台灣知名音樂比賽，每年吸引數百組學生團體參加比賽。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.facebook.com/nccugoldenmelody&#34;&gt;金旋獎 Facebook&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Backend: Python(Django2)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Frontend: Html, Css, Javascript&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CSS framework: Tocas UI(35th), Bulma(36th,37th)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Server: Ubuntu, nginx, uwsgi&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Other: Google OAuth&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;介面設計 UX&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;系統規劃&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;sreenshots&#34;&gt;Sreenshots&lt;/h2&gt;
+&lt;p&gt;報名頁面
+&lt;img src=&#34;screenshot1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;參賽者後台
+&lt;img src=&#34;screenshot2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;管理者後台
+&lt;img src=&#34;screenshot3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Youbike 站點分析預測及排程</title>
+      <link>/project/youbike/</link>
+      <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>/project/youbike/</guid>
+      <description>&lt;p&gt;&lt;code&gt;2018-2 《資料科學導論》期末專題, 成績: A+&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;公館地區是 Youbike 租借熱區，時常會有無⾞車車可借或無地可還的問題。這個專題以台北市資料開放平臺 每⽉月 200 萬筆 Youbike 租借資料及站點地理理資料，透過 RNN 預測未來來熱⾨門站點，以最短距離優先、 Kmeans 等策略略模擬補給卡⾞車車的排程，最終以 Leaflet.js 將我們所得到的結果視覺化在地圖上。&lt;/p&gt;
+&lt;h3 id=&#34;tools&#34;&gt;Tools&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;pandas, numpy&lt;/li&gt;
+&lt;li&gt;folium &lt;a href=&#34;https://blog.hanklu.tw/post/2019/folium/&#34;&gt;[地理資料視覺化使用 folium]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;keras&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;slide&#34;&gt;Slide&lt;/h2&gt;
+&lt;iframe src=&#34;https://docs.google.com/presentation/d/e/2PACX-1vT7O1IVdKvW6dyhHobM-H6jmlfjfrPo6rdaK7xhqVJS0myR4MiaHMahkxlNDXm56IE2XzrxxQfzfLU4/embed?start=false&amp;loop=true&amp;delayms=3000&#34; frameborder=&#34;0&#34; width=&#34;960&#34; height=&#34;569&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[Tacabro]臺科的社群網站</title>
+      <link>/project/tacabro/</link>
+      <pubDate>Thu, 03 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/project/tacabro/</guid>
+      <description>&lt;p&gt;&lt;code&gt;2018-2《軟體工程》期末專題, 成績: A+&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;不使⽤用框架使⽤用物件導向語⾔言實作 MVC 架構，製作類 Facebook 的討論區及好友系統。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://taiwan-te.ch/&#34;&gt;https://taiwan-te.ch/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/AcademiaMeow/Tacobro&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/gRCyGP_EkgA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h2&gt;
+&lt;p&gt;登入
+&lt;img src=&#34;%E7%99%BB%E5%85%A5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;動態
+&lt;img src=&#34;%E5%8B%95%E6%85%8B%E6%99%82%E5%A0%B1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;看板
+&lt;img src=&#34;%E9%96%92%E8%81%8A.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;個人頁面
+&lt;img src=&#34;applepie.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Github commit
+&lt;img src=&#34;github.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

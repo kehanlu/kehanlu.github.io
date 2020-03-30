@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/courses/example/example1/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/example/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/archive/slider/</loc>
+  </url>
+  
+  <url>
+    <loc>/courses/example/example2/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/archive/hero/</loc>
+  </url>
+  
+  <url>
+    <loc>/archive/demo/</loc>
+  </url>
+  
+  <url>
+    <loc>/archive/skills/</loc>
+  </url>
+  
+  <url>
+    <loc>/archive/old_experience/</loc>
+  </url>
+  
+  <url>
+    <loc>/archive/posts/</loc>
+  </url>
+  
+  <url>
+    <loc>/archive/people/</loc>
+  </url>
+  
+  <url>
+    <loc>/archive/talks/</loc>
+  </url>
+  
+  <url>
+    <loc>/archive/featured/</loc>
+  </url>
+  
+  <url>
+    <loc>/archive/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>/archive/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/selected/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/web/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/iot2gather/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/goldenmelody/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/merge-uni/</loc>
+    <lastmod>2019-07-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/writing-technical-content/</loc>
+    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/datascience/</loc>
+    <lastmod>2019-06-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/deeplearning/</loc>
+    <lastmod>2019-06-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/youbike/</loc>
+    <lastmod>2019-06-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/admin/</loc>
+    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/jupyter/</loc>
+    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/slides/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/slides/example/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/tacabro/</loc>
+    <lastmod>2019-01-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/projects/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/nba-allstar/</loc>
+    <lastmod>2018-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/tedxntust/</loc>
+    <lastmod>2018-10-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/academic/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/getting-started/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/demo/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/archive/</loc>
+  </url>
+  
+  <url>
+    <loc>/courses/</loc>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
+  </url>
+  
+</urlset>
