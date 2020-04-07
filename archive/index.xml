@@ -7,7 +7,7 @@
     <description>Archives</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
-      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <url>/img/avatar.jpg</url>
       <title>Archives</title>
       <link>/archive/</link>
     </image>

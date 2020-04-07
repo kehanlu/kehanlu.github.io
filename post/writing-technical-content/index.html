@@ -21,7 +21,7 @@
   
   
 
-  <meta name="author" content="Hank Lu">
+  <meta name="author" content="Ke-Han(Hank) Lu">
 
   
   
@@ -210,6 +210,44 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114741779-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-114741779-4', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
@@ -278,7 +316,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
   
   "author": {
     "@type": "Person",
-    "name": "Hank Lu"
+    "name": "Ke-Han(Hank) Lu"
   },
   
   "publisher": {
@@ -1003,11 +1041,11 @@ A Markdown aside is useful for displaying notices, hints, or definitions to your
   <div class="media author-card content-widget-hr">
     
       
-      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu8b4364b15c187e93861ddf4a20d89963_38539_270x270_fill_q90_lanczos_center.jpg" alt="Hank Lu">
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu8b4364b15c187e93861ddf4a20d89963_38539_270x270_fill_q90_lanczos_center.jpg" alt="Ke-Han(Hank) Lu">
     
 
     <div class="media-body">
-      <h5 class="card-title"><a href="/">Hank Lu</a></h5>
+      <h5 class="card-title"><a href="/">Ke-Han(Hank) Lu</a></h5>
       <h6 class="card-subtitle">CS student</h6>
       
       <ul class="network-icon" aria-hidden="true">
@@ -1024,8 +1062,74 @@ A Markdown aside is useful for displaying notices, hints, or definitions to your
       
     
     <li>
+      <a href="https://blog.hanklu.tw" target="_blank" rel="noopener">
+        <i class="fas fa-blog"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
       <a href="https://github.com/kehanlu" target="_blank" rel="noopener">
         <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://t.me/h4nk1u" target="_blank" rel="noopener">
+        <i class="fab fa-telegram-plane"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/hanklu-tw/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:me@hanklu.tw" >
+        <i class="fas fa-envelope"></i>
       </a>
     </li>
   
