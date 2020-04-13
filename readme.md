@@ -1,7 +1,7 @@
-About me: [me.hanklu.tw](https://me.hanklu.tw)
+## About me
 
-做過的各種事大集合。
+[me.hanklu.tw](https://me.hanklu.tw)，做過的各種事大集合。
 
-My blog: [blog.hanklu.tw](https://blog.hanklu.tw)
+## My blog
 
-日常記錄以及寫程式的一些筆記。
+[blog.hanklu.tw](https://blog.hanklu.tw)，日常記錄以及寫程式的一些筆記。
