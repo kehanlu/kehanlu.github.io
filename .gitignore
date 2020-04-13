@@ -1,0 +1,5 @@
+sass/
+node_modules/
+*.json
+.vscode
+.DS_STORE
