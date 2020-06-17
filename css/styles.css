@@ -5,6 +5,13 @@
   to {
     transform: rotate(359deg); } }
 
+/* Custom */
+
+
+
+/* Custom */
+
+
 .delete, .modal-close, .is-unselectable, .button, .file, .breadcrumb, .pagination-previous,
 .pagination-next,
 .pagination-link,
@@ -4458,7 +4465,9 @@ h6 {
   font-weight: normal; }
 
 ul {
-  list-style: none; }
+  list-style: disc; 
+  padding-left: 30px;
+}
 
 button,
 input,
