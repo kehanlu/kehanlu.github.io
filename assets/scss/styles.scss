@@ -1,0 +1,15 @@
+@import "~bulma/sass/utilities/_all";
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+$body-family: "Nunito", sans-serif;
+$beige-lighter: #EFF0EB;
+$body-background-color: $beige-lighter;
+$body-size: 20px;
+$link: #a8414f;
+
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
