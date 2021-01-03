@@ -116,6 +116,7 @@ export default {
 }
 
 #text {
+  color:#4a4a4a;
   width: 80%;
   font-size: 3em;
   border: none;
