@@ -121,6 +121,7 @@ export default {
   border: none;
   font-family: "Noto Sans TC", sans-serif;
   font-weight: 500;
+  background-color: #eff0eb;
 }
 .top-buttons {
   position: fixed;
