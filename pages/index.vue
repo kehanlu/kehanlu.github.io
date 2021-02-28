@@ -2,7 +2,7 @@
   <section class="hero">
     <div class="hero-body">
       <div class="container has-text-centered">
-        <!-- <img style="border-radius: 50%" width="128px" src="avatar.jpg" /> -->
+        <img style="border-radius: 50%" width="128px" src="avatar.jpg" />
         <h1 class="title is-spaced is-3" style="margin-bottom: 20px">
           KeHan Lu
         </h1>
