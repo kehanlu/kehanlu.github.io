@@ -30,6 +30,7 @@
                 <a href="https://me.hanklu.tw">About me</a>
               </li>
               <li><a href="https://blog.hanklu.tw">Blog</a></li>
+              <li><a href="https://slides.hanklu.tw">Slides</a></li>
               <li>
                 <a href="https://www.instagram.com/ramenpie5566/"
                   >Ramen Instagram</a
