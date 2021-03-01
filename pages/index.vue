@@ -31,11 +31,6 @@
               </li>
               <li><a href="https://blog.hanklu.tw">Blog</a></li>
               <li><a href="https://slides.hanklu.tw">Slides</a></li>
-              <li>
-                <a href="https://www.instagram.com/ramenpie5566/"
-                  >Ramen Instagram</a
-                >
-              </li>
             </ul>
           </div>
         </div>
@@ -77,7 +72,10 @@
               <li>覺得寫程式就是在使用魔法，寫了很多小工具讓生活變得更懶惰</li>
               <li>最喜歡的語言是 Python</li>
               <li>習慣把所有事都弄出 SOP 和文件</li>
-              <li>喜歡吃拉麵、去河濱公園騎腳踏車</li>
+              <li>
+                喜歡<a href="https://www.instagram.com/ramenpie5566/">吃拉麵</a
+                >、去河濱公園騎腳踏車
+              </li>
             </ul>
           </div>
         </div>
@@ -94,6 +92,9 @@ body {
   margin: 0 1rem;
   border-bottom: 1px solid;
   display: inline;
+}
+.more-about-me ul {
+  margin-top: 0.5rem;
 }
 .more-about-me li {
   font-size: 0.8rem;
