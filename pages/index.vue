@@ -21,17 +21,34 @@
           </div>
         </div>
       </div>
+      <hr />
       <!-- Some Links -->
       <div class="container">
         <div class="columns is-centered links">
           <div class="column is-7">
-            <ul>
-              <li>
-                <a href="https://me.hanklu.tw">About me</a>
-              </li>
-              <li><a href="https://blog.hanklu.tw">Blog</a></li>
-              <li><a href="https://slides.hanklu.tw">Slides</a></li>
-            </ul>
+            <div class="badge">
+              <a href="https://hanklu.tw"
+                ><img
+                  src="https://img.shields.io/badge/home-hanklu.tw-blue"
+                  alt=""
+              /></a>
+              <a href="https://github.com/kehanlu"
+                ><img
+                  src="https://img.shields.io/badge/-kehanlu-181717?style=flat&amp;labelColor=181717&amp;logo=GitHub&amp;logoColor=white"
+              /></a>
+              <a href="https://twitter.com/kehan_lu"
+                ><img
+                  src="https://img.shields.io/badge/-kehan_lu-1DA1F2?style=flat&amp;labelColor=1DA1F2&amp;logo=Twitter&amp;logoColor=ffffff"
+              /></a>
+              <a href="https://blog.hanklu.tw"
+                ><img
+                  src="https://img.shields.io/badge/-blog.hanklu.tw-FF4088?style=flat&amp;labelColor=FF4088&amp;logo=hugo&amp;logoColor=white"
+              /></a>
+              <a href="https://slides.hanklu.tw"
+                ><img
+                  src="https://img.shields.io/badge/-slides.hanklu.tw-F2E142?style=flat&amp;labelColor=F2E142&amp;logo=reveal.js&amp;logoColor=000000"
+              /></a>
+            </div>
           </div>
         </div>
       </div>
@@ -100,6 +117,12 @@ body {
   font-size: 0.8rem;
   list-style: disc;
   padding-bottom: 0.3rem;
+}
+.badge img {
+  height: 25px;
+}
+hr {
+  background-color: #eee;
 }
 </style>
 
