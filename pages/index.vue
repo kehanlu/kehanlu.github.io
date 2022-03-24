@@ -25,7 +25,7 @@
       <!-- Some Links -->
       <div class="container">
         <div class="columns is-centered links">
-          <div class="column is-7">
+          <div class="column is-10 has-text-centered">
             <div class="badge">
               <a href="https://hanklu.tw"
                 ><img
@@ -37,6 +37,7 @@
                   src="https://img.shields.io/badge/about-KeHan%20Lu-red"
                   alt=""
               /></a>
+              <br />
               <a href="https://github.com/kehanlu"
                 ><img
                   src="https://img.shields.io/badge/-kehanlu-181717?style=flat&amp;labelColor=181717&amp;logo=GitHub&amp;logoColor=white"
