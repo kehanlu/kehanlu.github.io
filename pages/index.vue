@@ -15,7 +15,7 @@
               <p>
                 Hi, I am Hank, a computer science student at TaiwanTech, Taiwan.
                 I love coding and ramen🍜. My research interest is deep learning
-                and NLP. (<a href="https://about.hanklu.tw">more about me</a>)
+                and NLP. (<a href="https://about.hanklu.tw">My CV</a>)
               </p>
             </div>
           </div>
