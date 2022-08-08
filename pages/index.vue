@@ -68,17 +68,12 @@
               ></a>
             </span>
             <span class="icon is-large">
-              <a href="https://t.me/h4nk1u" target="_blank"
-                ><i class="fab fa-telegram fa-2x"></i
-              ></a>
-            </span>
-            <span class="icon is-large">
-              <a href="https://www.linkedin.com/in/hanklu-tw/" target="_blank"
+              <a href="https://www.linkedin.com/in/kehanlu/" target="_blank"
                 ><i class="fab fa-linkedin fa-2x"></i
               ></a>
             </span>
             <span class="icon is-large">
-              <a href="mailto:me@hanklu.tw" target="_blank"
+              <a href="mailto:khlu@nlp.csie.ntust.edu.tw" target="_blank"
                 ><i class="fas fa-envelope fa-2x"></i
               ></a>
             </span>
