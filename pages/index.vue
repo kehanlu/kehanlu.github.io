@@ -14,7 +14,7 @@
               <li>
                 <span class="icon-text">
                   <span class="icon">
-                    <i class="fas fa-location-dot"></i>
+                    <i class="fas fa-map-marker-alt"></i>
                   </span>
                   <span>Taipei, Taiwan</span>
                 </span>
@@ -116,6 +116,9 @@ body {
 }
 p {
   line-height: 2;
+}
+a {
+  color: #4a4a4a;
 }
 .content ul ul {
   list-style-type: none;
