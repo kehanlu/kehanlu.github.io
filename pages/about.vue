@@ -6,7 +6,7 @@
           <div class="content has-text-centered">
             <h2>Ke-Han Lu</h2>
             <div>
-              <img style="border-radius: 50%" width="128px" src="avatar.jpg" />
+              <img style="border-radius: 50%" width="128px" src="/avatar.jpg" />
             </div>
           </div>
           <div class="content menu">
