@@ -1,99 +1,99 @@
 <template>
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <img style="border-radius: 50%" width="128px" src="avatar.jpg" />
-        <h1 class="title is-spaced is-3" style="margin-bottom: 20px">
-          KeHan Lu
-        </h1>
-      </div>
-      <!-- Introduction -->
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-7">
-            <div class="content">
-              <p>
-                Hi, I am Hank, a computer science student at TaiwanTech, Taiwan.
-                I love coding and ramen🍜. My research interest is deep learning
-                and NLP. (<a href="https://about.hanklu.tw">My CV</a>)
-              </p>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns">
+        <div class="column is-one-fifth">
+          <div class="content has-text-centered">
+            <h2>Ke-Han Lu</h2>
+            <div>
+              <img style="border-radius: 50%" width="128px" src="/avatar.jpg" />
             </div>
           </div>
-        </div>
-      </div>
-      <hr />
-      <!-- Some Links -->
-      <div class="container">
-        <div class="columns is-centered links">
-          <div class="column is-10 has-text-centered">
-            <div class="badge">
-              <a href="https://hanklu.tw"
-                ><img
-                  src="https://img.shields.io/badge/home-hanklu.tw-blue"
-                  alt=""
-              /></a>
-              <a href="https://about.hanklu.tw"
-                ><img
-                  src="https://img.shields.io/badge/about-KeHan%20Lu-red"
-                  alt=""
-              /></a>
-              <br />
-              <a href="https://github.com/kehanlu"
-                ><img
-                  src="https://img.shields.io/badge/-kehanlu-181717?style=flat&amp;labelColor=181717&amp;logo=GitHub&amp;logoColor=white"
-              /></a>
-              <a href="https://twitter.com/kehan_lu"
-                ><img
-                  src="https://img.shields.io/badge/-kehan_lu-1DA1F2?style=flat&amp;labelColor=1DA1F2&amp;logo=Twitter&amp;logoColor=ffffff"
-              /></a>
-              <a href="https://blog.hanklu.tw"
-                ><img
-                  src="https://img.shields.io/badge/-blog.hanklu.tw-FF4088?style=flat&amp;labelColor=FF4088&amp;logo=hugo&amp;logoColor=white"
-              /></a>
-              <a href="https://slides.hanklu.tw"
-                ><img
-                  src="https://img.shields.io/badge/-slides.hanklu.tw-F2E142?style=flat&amp;labelColor=F2E142&amp;logo=reveal.js&amp;logoColor=000000"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Icon -->
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <span class="icon is-large">
-              <a href="https://github.com/kehanlu" target="_blank"
-                ><i class="fab fa-github fa-2x"></i
-              ></a>
-            </span>
-            <span class="icon is-large">
-              <a href="https://www.linkedin.com/in/kehanlu/" target="_blank"
-                ><i class="fab fa-linkedin fa-2x"></i
-              ></a>
-            </span>
-            <span class="icon is-large">
-              <a href="mailto:khlu@nlp.csie.ntust.edu.tw" target="_blank"
-                ><i class="fas fa-envelope fa-2x"></i
-              ></a>
-            </span>
-          </div>
-        </div>
-      </div>
-      <!-- more -->
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-7 more-about-me">
-            <strong>More About me</strong>
+          <div class="content menu">
             <ul>
-              <li>在 臺科大自然語言處理實驗室 擔任 菸酒生</li>
-              <li>覺得寫程式就是在使用魔法，寫了很多小工具讓生活變得更懶惰</li>
-              <li>最喜歡的語言是 Python</li>
-              <li>習慣把所有事都弄出 SOP 和文件</li>
               <li>
-                喜歡<a href="https://www.instagram.com/ramenpie5566/">吃拉麵</a
-                >、去河濱公園騎腳踏車
+                <span class="icon-text">
+                  <a href="mailto:khlu@nlp.csie.ntust.edu.tw" target="_blank">
+                    <span class="icon">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                    <span>Email</span>
+                  </a>
+                </span>
               </li>
+              <li>
+                <span class="icon-text">
+                  <a href="https://github.com/kehanlu" target="_blank">
+                    <span class="icon">
+                      <i class="fab fa-github-alt"></i>
+                    </span>
+                    <span>GitHub</span>
+                  </a>
+                </span>
+              </li>
+              <li>
+                <span class="icon-text">
+                  <a href="https://scholar.google.com/citations?user=YODHqGkAAAAJ" target="_blank">
+                    <span class="icon">
+                      <i class="fab fa-google"></i>
+                    </span>
+                    <span>Google scholar</span>
+                  </a>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <h3>About me</h3>
+            <p>
+              I am currently pursuing my M.S. degree in computer science and
+              information engineering(CSIE) at National Taiwan University of
+              Science and Technology (TaiwanTech), Taipei, Taiwan. Since 2020, I
+              have begun to study end-to-end automatic speech recognition (ASR)
+              and visual question answering (VQA). My research interests are in
+              the area of deep machine learning, cross-modal representation
+              learning, and natural language processing.
+            </p>
+          </div>
+          <!-- Publications -->
+          <div class="content">
+            <h3>Publication</h3>
+            <Publications />
+          </div>
+          <!-- Education -->
+          <div class="content">
+            <h3>Education</h3>
+            <ul>
+              <!--  -->
+              <li>
+                <ul>
+                  <li>
+                    <b>National Taiwan University of Science and Technology, Taiwan</b>
+                  </li>
+                  <li>Master's degree, Computer Science and Information Engineering</li>
+                  <li>2020 ~ Present</li>
+                </ul>
+              </li>
+              <!--  -->
+              <li>
+                <ul>
+                  <li>
+                    <b>National Taiwan University of Science and Technology, Taiwan</b>
+                  </li>
+                  <li>Bachelor's degree, Computer Science and Information Engineering</li>
+                  <li>2016 ~ 2020</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <h3>Honor</h3>
+            <ul>
+              <li>16th Outstanding Youth award (校園傑出青年)</li>
+              <li>Scholarships for overseas study of outstanding students(教育部學海飛颺獎學金)</li>
+              <li>Academic Excellence Award (top 5% of class in semester)</li>
             </ul>
           </div>
         </div>
@@ -106,24 +106,17 @@
 body {
   font-family: "Nunito", sans-serif;
 }
-.links li {
-  margin: 0 1rem;
-  border-bottom: 1px solid;
-  display: inline;
+p {
+  line-height: 2;
 }
-.more-about-me ul {
-  margin-top: 0.5rem;
+.content ul ul {
+  list-style-type: none;
+  margin-left: 0.5em;
 }
-.more-about-me li {
-  font-size: 0.8rem;
-  list-style: disc;
-  padding-bottom: 0.3rem;
-}
-.badge img {
-  height: 25px;
-}
-hr {
-  background-color: #eee;
+
+.menu ul {
+  list-style-type: none;
+  margin: 0px;
 }
 </style>
 
