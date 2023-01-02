@@ -13,6 +13,14 @@
             <ul>
               <li>
                 <span class="icon-text">
+                  <span class="icon">
+                    <i class="fas fa-location-dot"></i>
+                  </span>
+                  <span>Taipei, Taiwan</span>
+                </span>
+              </li>
+              <li>
+                <span class="icon-text">
                   <a href="mailto:khlu@nlp.csie.ntust.edu.tw" target="_blank">
                     <span class="icon">
                       <i class="fas fa-envelope"></i>
