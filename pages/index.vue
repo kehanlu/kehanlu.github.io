@@ -117,6 +117,7 @@ body {
 }
 p {
   line-height: 2;
+  text-align: justify;
 }
 a {
   color: #4a4a4a;
