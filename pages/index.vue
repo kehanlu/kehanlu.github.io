@@ -5,6 +5,7 @@
         <div class="column is-one-fifth">
           <div class="content has-text-centered">
             <h2>Ke-Han Lu</h2>
+            <h3>Master's student in TaiwanTec, Taiwan</h3>
             <div>
               <img style="border-radius: 50%" width="128px" src="/avatar.jpg" />
             </div>
