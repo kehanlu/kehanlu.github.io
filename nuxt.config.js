@@ -22,7 +22,12 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: "https://use.fontawesome.com/releases/v5.14.0/js/all.js" }
+      { src: "https://use.fontawesome.com/releases/v5.14.0/js/all.js" },
+      {
+        src: "https://www.googletagmanager.com/gtag/js?id=G-NK3RNSFFQK",
+        async: true,
+      },
+      { src: "/js/analytics.js" },
     ]
   },
 
@@ -32,7 +37,7 @@ export default {
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [{ src: '~plugins/ga.js', mode: 'client' }],
+  plugins: [],
 
 
   // Auto import components (https://go.nuxtjs.dev/config-components)

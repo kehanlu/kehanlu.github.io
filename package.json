@@ -1,21 +1,23 @@
 {
-    "name": "nuxt",
-    "version": "1.0.0",
-    "private": true,
-    "scripts": {
-      "dev": "nuxt",
-      "build": "nuxt build",
-      "start": "nuxt start",
-      "generate": "nuxt generate",
-      "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate"
-    },
-    "dependencies": {
-      "core-js": "^3.6.5",
-      "node-sass": "^5.0.0",
-      "nuxt": "^2.14.7",
-      "nuxt-buefy": "^0.4.3"
-    },
-    "devDependencies": {
-      "sass-loader": "^10.1.0"
-    }
+  "name": "nuxt",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate"
+  },
+  "dependencies": {
+    "@vue/shared": "^3.2.45",
+    "core-js": "^3.6.5",
+    "node-sass": "^5.0.0",
+    "nuxt": "^2.14.7",
+    "nuxt-buefy": "^0.4.3",
+    "vue-gtag": "^2.0.1"
+  },
+  "devDependencies": {
+    "sass-loader": "^10.1.0"
   }
+}
