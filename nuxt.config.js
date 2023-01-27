@@ -22,12 +22,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: "https://use.fontawesome.com/releases/v5.14.0/js/all.js" },
-      {
-        src: "https://www.googletagmanager.com/gtag/js?id=G-NK3RNSFFQK",
-        async: true,
-      },
-      { src: "/js/analytics.js" },
+      { src: "https://use.fontawesome.com/releases/v5.14.0/js/all.js" }
     ]
   },
 

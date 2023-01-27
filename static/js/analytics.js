@@ -5,3 +5,5 @@ function gtag() {
 gtag("js", new Date())
 
 gtag("config", "G-NK3RNSFFQK")
+
+console.log("ga");
