@@ -5,7 +5,7 @@
         <div class="column is-one-fifth">
           <div class="content has-text-centered">
             <h2>Ke-Han Lu</h2>
-            <p>Master's student in TaiwanTech, Taiwan</p>
+            <!-- <p>Master's student in TaiwanTech, Taiwan</p> -->
             <div>
               <img style="border-radius: 50%" width="128px" src="/avatar.jpg" />
             </div>
@@ -55,15 +55,15 @@
         </div>
         <div class="column">
           <div class="content">
+            <b>*I am currently doing my military service in the R.O.C. Army.</b>
             <h3>About me</h3>
             <p>
-              I am currently pursuing my M.S. degree in computer science and
-              information engineering(CSIE) at National Taiwan University of
-              Science and Technology (TaiwanTech), Taipei, Taiwan. Since 2020, I
-              have begun to study end-to-end automatic speech recognition (ASR)
-              and visual question answering (VQA). My research interests are in
-              the area of deep machine learning, cross-modal representation
-              learning, and natural language processing.
+              I received my M.S. degree and B.S degree in Computer Science and
+              Engineering (CSIE) from the National Taiwan University of Science and Technology (TaiwanTech), Taipei, Taiwan. Since 2020, I have
+              started to study end-to-end automatic speech recognition (ASR) and
+              and visual question answering (VQA). My research interests are
+              deep machine learning, cross-modal representation learning, and natural language
+              learning.
             </p>
           </div>
           <!-- Publications -->
@@ -82,7 +82,7 @@
                     <b>National Taiwan University of Science and Technology, Taiwan</b>
                   </li>
                   <li>Master's degree, Computer Science and Information Engineering</li>
-                  <li>2020 ~ Present</li>
+                  <li>2020.09 ~ 2023.02</li>
                 </ul>
               </li>
               <!--  -->
@@ -92,7 +92,7 @@
                     <b>National Taiwan University of Science and Technology, Taiwan</b>
                   </li>
                   <li>Bachelor's degree, Computer Science and Information Engineering</li>
-                  <li>2016 ~ 2020</li>
+                  <li>2016.09 ~ 2020.06</li>
                 </ul>
               </li>
             </ul>
