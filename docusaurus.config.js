@@ -58,7 +58,6 @@ const config = {
     ({
       // Replace with your project's social card
       navbar: {
-        title: 'My Site',
         logo: {
           alt: '',
           src: 'img/ninja.png',

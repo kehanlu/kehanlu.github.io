@@ -5,7 +5,6 @@
  */
 export default {
   "title": "Ke-Han Lu",
-  "tagline": "Dinosaurs are cool",
   "favicon": "img/favicon.ico",
   "url": "https://hanklu.tw",
   "baseUrl": "/",
@@ -41,7 +40,6 @@ export default {
   ],
   "themeConfig": {
     "navbar": {
-      "title": "My Site",
       "logo": {
         "alt": "",
         "src": "img/ninja.png",
@@ -349,6 +347,7 @@ export default {
   "headTags": [],
   "stylesheets": [],
   "clientModules": [],
+  "tagline": "",
   "titleDelimiter": "|",
   "noIndex": false,
   "markdown": {
