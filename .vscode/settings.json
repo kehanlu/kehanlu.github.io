@@ -1,7 +1,0 @@
-{
-    "editor.formatOnSave": true,
-    "prettier.endOfLine": "auto",
-    "prettier.vueIndentScriptAndStyle": true,
-    "vetur.format.defaultFormatter.ts": "prettier-tslint",
-    "vetur.format.defaultFormatter.html": "prettyhtml"
-}
