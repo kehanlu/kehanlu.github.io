@@ -43,28 +43,33 @@ export default {
       "logo": {
         "alt": "",
         "src": "img/ninja.png",
-        "href": "/"
+        "href": "/",
+        "target": "_self"
       },
       "items": [
         {
           "to": "https://notes.hanklu.tw",
           "position": "left",
-          "label": "Notes"
+          "label": "Notes",
+          "target": "_self"
         },
         {
           "to": "https://blog.hanklu.tw",
           "position": "left",
-          "label": "Blog"
+          "label": "Blog",
+          "target": "_self"
         },
         {
           "to": "https://slides.hanklu.tw",
           "position": "left",
-          "label": "Slides"
+          "label": "Slides",
+          "target": "_self"
         },
         {
           "to": "https://github.com/kehanlu",
           "label": "GitHub",
-          "position": "right"
+          "position": "right",
+          "target": "_self"
         }
       ],
       "hideOnScroll": false
@@ -77,19 +82,23 @@ export default {
           "items": [
             {
               "label": "About me",
-              "href": "/"
+              "href": "/",
+              "target": "_self"
             },
             {
               "label": "Notes",
-              "to": "https://notes.hanklu.tw"
+              "to": "https://notes.hanklu.tw",
+              "target": "_self"
             },
             {
               "label": "Blog",
-              "to": "https://blog.hanklu.tw"
+              "to": "https://blog.hanklu.tw",
+              "target": "_self"
             },
             {
               "label": "Slides",
-              "to": "https://slides.hanklu.tw"
+              "to": "https://slides.hanklu.tw",
+              "target": "_self"
             }
           ]
         },
@@ -98,15 +107,18 @@ export default {
           "items": [
             {
               "label": "GitHub",
-              "to": "https://github.com/kehanlu"
+              "to": "https://github.com/kehanlu",
+              "target": "_self"
             },
             {
               "label": "Google scholar",
-              "to": "https://scholar.google.com/citations?user=YODHqGkAAAAJ"
+              "to": "https://scholar.google.com/citations?user=YODHqGkAAAAJ",
+              "target": "_self"
             },
             {
               "label": "Twitter",
-              "to": "https://twitter.com/kehan_lu"
+              "to": "https://twitter.com/kehan_lu",
+              "target": "_self"
             }
           ]
         }

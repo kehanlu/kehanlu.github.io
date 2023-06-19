@@ -61,28 +61,33 @@ const config = {
         logo: {
           alt: '',
           src: 'img/ninja.png',
-          href: '/'
+          href: '/',
+          target: '_self',
         },
         items: [
           {
             to: "https://notes.hanklu.tw",
             position: 'left',
             label: 'Notes',
+            target: '_self',
           },
           {
             to: "https://blog.hanklu.tw",
             position: 'left',
             label: 'Blog',
+            target: '_self',
           },
           {
             to: "https://slides.hanklu.tw",
             position: 'left',
             label: 'Slides',
+            target: '_self',
           },
           {
             to: 'https://github.com/kehanlu',
             label: 'GitHub',
             position: 'right',
+            target: '_self',
           },
         ],
       },
@@ -95,18 +100,22 @@ const config = {
               {
                 label: 'About me',
                 href: '/',
+                target: '_self',
               },
               {
                 label: 'Notes',
                 to: 'https://notes.hanklu.tw',
+                target: '_self',
               },
               {
                 label: 'Blog',
                 to: 'https://blog.hanklu.tw',
+                target: '_self',
               },
               {
                 label: 'Slides',
                 to: 'https://slides.hanklu.tw',
+                target: '_self',
               },
             ],
           },
@@ -116,14 +125,17 @@ const config = {
               {
                 label: 'GitHub',
                 to: 'https://github.com/kehanlu',
+                target: '_self',
               },
               {
                 label: 'Google scholar',
                 to: 'https://scholar.google.com/citations?user=YODHqGkAAAAJ',
+                target: '_self',
               },
               {
                 label: 'Twitter',
                 to: 'https://twitter.com/kehan_lu',
+                target: '_self',
               },
             ],
           },
