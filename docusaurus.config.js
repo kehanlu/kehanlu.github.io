@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Ke-Han Lu',
-  favicon: 'img/favicon.ico',
+  favicon: 'images/favicon.ico',
 
   // Set the production url of your site here
   url: 'https://hanklu.tw',
@@ -60,7 +60,7 @@ const config = {
       navbar: {
         logo: {
           alt: '',
-          src: 'img/ninja.png',
+          src: 'images/ninja.png',
           href: '/',
           target: '_self',
         },

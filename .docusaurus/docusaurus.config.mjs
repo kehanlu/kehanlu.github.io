@@ -5,7 +5,7 @@
  */
 export default {
   "title": "Ke-Han Lu",
-  "favicon": "img/favicon.ico",
+  "favicon": "images/favicon.ico",
   "url": "https://hanklu.tw",
   "baseUrl": "/",
   "organizationName": "kehanlu",
@@ -42,7 +42,7 @@ export default {
     "navbar": {
       "logo": {
         "alt": "",
-        "src": "img/ninja.png",
+        "src": "images/ninja.png",
         "href": "/",
         "target": "_self"
       },

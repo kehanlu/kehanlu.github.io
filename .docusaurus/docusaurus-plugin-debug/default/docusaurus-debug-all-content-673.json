@@ -64,7 +64,8 @@
         "title": "Ke-Han Lu",
         "description": "About me",
         "frontMatter": {
-          "title": "Ke-Han Lu"
+          "title": "Ke-Han Lu",
+          "image": "images/avatar.png"
         }
       }
     ]
