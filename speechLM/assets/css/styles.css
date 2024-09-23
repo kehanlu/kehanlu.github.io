@@ -1,0 +1,25 @@
+:root {
+    /* CSS Variables */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* CSS Variables */
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* CSS Variables */
+  }
+}
+
+[data-theme=light],
+.theme-light {
+  /* CSS Variables */
+}
+
+[data-theme=dark],
+.theme-dark {
+  /* CSS Variables */
+}
