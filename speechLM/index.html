@@ -10,104 +10,159 @@
     > -->
   <link rel="stylesheet" href="assets/css/bulma-no-dark-mode.css">
   <link rel="stylesheet" href="assets/css/styles.css">
-  <title>Document</title>
+  <title>DeSTA2: Developing Instruction-Following Speech Language
+    Model Without Speech Instruction-Tuning Data</title>
 
   <section class="hero">
     <div class="container">
       <div class="hero-body">
-        <p class="title is-1">Developing Instruction-Following Speech Language
+        <p class="title is-1">DeSTA2: Developing Instruction-Following Speech Language
           Model Without Speech Instruction-Tuning Data</p>
-        <p class="subtitle">Ke-Han Lu, Zhehuai Chen, Szu-Wei Fu, Chao-Han Huck Yang, Jagadeesh Balam, Boris
-          Ginsburg, Yu-Chiang Frank Wang, Hung-yi Lee</p>
-        <p class="subtitle">National Taiwan University, NVIDIA</p>
-        <p>Recent end-to-end speech language models (SLMs) have expanded upon the capabilities of large language
-          models (LLMs) by incorporating pre-trained speech models. However, these SLMs often undergo
-          extensive speech instruction-tuning to bridge the gap between speech and text modalities. This
-          requires significant annotation efforts and risks catastrophic forgetting of the original language
-          capabilities. In this work, we present a simple yet effective automatic process for creating
-          speech-text pair data that carefully injects speech paralinguistic understanding abilities into SLMs
-          while preserving the inherent language capabilities of the text-based LLM. Our model demonstrates
-          general capabilities for speech-related tasks without the need for speech instruction tuning data,
-          achieving impressive performance on Dynamic-SUPERB and AIR-Bench-Chat benchmarks. Furthermore, our
-          model exhibits the ability to follow complex instructions derived from LLMs, such as specific output
-          formatting and chain-of-thought reasoning. Our approach not only enhances the versatility and
-          effectiveness of SLMs but also reduces reliance on extensive annotated datasets, paving the way for
-          more efficient and capable speech understanding systems.
-        </p>
+        <div class="content is-large">
+          <p class="subtitle">Ke-Han Lu, Zhehuai Chen, Szu-Wei Fu, Chao-Han Huck Yang, Jagadeesh Balam, Boris
+            Ginsburg, Yu-Chiang Frank Wang, Hung-yi Lee</p>
+          <p class="subtitle">National Taiwan University, NVIDIA</p>
+
+
+          <!-- <p>Recent end-to-end speech language models (SLMs) have expanded upon the capabilities of large language
+            models (LLMs) by incorporating pre-trained speech models. However, these SLMs often undergo
+            extensive speech instruction-tuning to bridge the gap between speech and text modalities. This
+            requires significant annotation efforts and risks catastrophic forgetting of the original language
+            capabilities. In this work, we present a simple yet effective automatic process for creating
+            speech-text pair data that carefully injects speech paralinguistic understanding abilities into SLMs
+            while preserving the inherent language capabilities of the text-based LLM. Our model demonstrates
+            general capabilities for speech-related tasks without the need for speech instruction tuning data,
+            achieving impressive performance on Dynamic-SUPERB and AIR-Bench-Chat benchmarks. Furthermore, our
+            model exhibits the ability to follow complex instructions derived from LLMs, such as specific output
+            formatting and chain-of-thought reasoning. Our approach not only enhances the versatility and
+            effectiveness of SLMs but also reduces reliance on extensive annotated datasets, paving the way for
+            more efficient and capable speech understanding systems.
+          </p> -->
+        </div>
+        <img src="assets/images/figure1.png" style="border-radius: 50px;" alt="">
+      </div>
+
+    </div>
+  </section>
+  <!-- <section class="section">
+    <div class="container">
+      <img src="assets/images/figure1.png" style="border-radius: 50px;" alt="">
+
+    </div>
+  </section> -->
+
+  <section class="section">
+    <div class="container">
+      <div class="box">
+        <div class="content is-large">
+          <h2 class="title is-4">
+            ✨✨ Key features
+          </h2>
+
+          <ul>
+            <li>We propose an automatic approach to develop speech language models <em><b>without</b></em> using speech
+              instruction-tuning data. We aim to inject speech understanding
+              capability into text-based LLMs while keeping their original versatility.
+            </li>
+            <li>We train the end-to-end speech language model with carefully constructed
+              <a href="#dataset-construction">speech captions</a> to
+              avoid the catastrophic forgetting problem.
+            </li>
+            <li>
+              The model shows strong <a href="#instruction-following">instruction-following ability</a> and demonstrates
+              robust
+              speech understanding capability on the <a href="#dynamic-superb">Dynamic-SUPERB</a> and
+              <a href="#AIR-Bench-Chat">AIR-Bench-Chat</a> benchmarks.
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <h2 class="title is-2">Instruction-following</h2>
+      <div class="box">
+        <div class="content">
+          <h2 class="title is-2" id="instruction-following">Instruction-following Ability</h2>
+          <p>Our model not only demonstrates strong speech understanding capabilities but also excels in following
+            complex
+            instructions, such as following specific output formatting and chain-of-thought reasoning.
+          </p>
+        </div>
 
-      <audio controls>
-        <source src="assets/audios/7_1_d7.wav" type="audio/ogg">
-      </audio>
-      <table class="table is-fullwidth">
-        <thead>
-          <tr>
-            <th>Instruction</th>
-            <th>Model output</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>What is the gender of the speaker? <b>Your entire response should be in English, capital letters
-                only.</b></td>
-            <td>THE GENDER OF THE SPEAKER IS FEMALE.</td>
-          </tr>
-          <tr>
-            <td>What is the emotion of the speaker? <b>Your entire response should be in English, capital letters
-                only.</b>
-            </td>
-            <td>HAPPINESS</td>
-          </tr>
-          <tr>
-            <td>What is the gender of the speaker? <b>Answer in JSON format.</b></td>
-            <td>{"gender": "Female" }</td>
-          </tr>
-          <tr>
-            <td>What is the emotion conveyed in the speech? <b>Think step by step.</b></td>
-            <td>Let's break it down step by step!<br>1. We start with the phrase "Thank you for calling". This
-              implies
-              that a request has been made, and the speaker is expressing gratitude.<br>2. The next phrase is "Goodbye".
-              This is a normal way to end a conversation, and it's a polite way to part ways.<br>Considering these
-              two
-              phrases together, we can infer that the speaker is happy to end the conversation and is not expecting
-              anything further. The tone is friendly and grateful, suggesting that the speaker has had a positive
-              interaction.<br>Therefore, the emotion conveyed in the speech is happiness!</td>
-          </tr>
-          <tr>
-            <td><b>Analyze the speech,</b> then tell me what is the emotion conveyed in the speech?</td>
-            <td>Let's break down the speech:<br>* "Thank you for calling": This phrase is a polite expression of
-              gratitude for the person's call.<br>* "Goodbye": This is a final farewell, indicating that the
-              conversation is ending.<br>The tone of the speech is polite and friendly, as the speaker is thanking the
-              person for calling and bidding them farewell.<br>The emotion conveyed in this speech is happiness. The
-              speaker seems cheerful and appreciative, expressing gratitude for the call and ending the conversation on
-              a positive note.</td>
-          </tr>
-          <tr>
-            <td>Calculate the words per second rate, <b>think step by step.</b>
-            </td>
-            <td>Let's break it down step by step:<br>1. The speech lasts for 2 seconds: [00:00:00 - 00:00:02]<br>2. The
-              number of words is: "Thank you for calling. Goodbye." (5 words)<br>3. To find the words per second rate,
-              we need to divide the number of words by the time it took to say the words:<br>Words per second = Total
-              number of words / Time taken (in seconds)<br>= 5 words / 2 seconds<br>= 2.5 words per second<br>Therefore,
-              the
-              words per second rate is 2.5 words</td>
-          </tr>
-      </table>
+        <audio controls>
+          <source src="assets/audios/7_1_d7.wav" type="audio/ogg">
+        </audio>
+        <table class="table is-fullwidth">
+          <thead>
+            <tr>
+              <th>Instruction</th>
+              <th>Model Output</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>What is the gender of the speaker? <b>Your entire response should be in English, capital letters
+                  only.</b></td>
+              <td>THE GENDER OF THE SPEAKER IS FEMALE.</td>
+            </tr>
+            <tr>
+              <td>What is the emotion of the speaker? <b>Your entire response should be in English, capital letters
+                  only.</b>
+              </td>
+              <td>HAPPINESS</td>
+            </tr>
+            <tr>
+              <td>What is the gender of the speaker? <b>Answer in JSON format.</b></td>
+              <td>{"gender": "Female" }</td>
+            </tr>
+            <tr>
+              <td>What is the emotion conveyed in the speech? <b>Think step by step.</b></td>
+              <td>Let's break it down step by step!<br>1. We start with the phrase "Thank you for calling". This
+                implies
+                that a request has been made, and the speaker is expressing gratitude.<br>2. The next phrase is
+                "Goodbye".
+                This is a normal way to end a conversation, and it's a polite way to part ways.<br>Considering these
+                two
+                phrases together, we can infer that the speaker is happy to end the conversation and is not expecting
+                anything further. The tone is friendly and grateful, suggesting that the speaker has had a positive
+                interaction.<br>Therefore, the emotion conveyed in the speech is happiness!</td>
+            </tr>
+            <tr>
+              <td><b>Analyze the speech,</b> then tell me what is the emotion conveyed in the speech?</td>
+              <td>Let's break down the speech:<br>* "Thank you for calling": This phrase is a polite expression of
+                gratitude for the person's call.<br>* "Goodbye": This is a final farewell, indicating that the
+                conversation is ending.<br>The tone of the speech is polite and friendly, as the speaker is thanking the
+                person for calling and bidding them farewell.<br>The emotion conveyed in this speech is happiness. The
+                speaker seems cheerful and appreciative, expressing gratitude for the call and ending the conversation
+                on
+                a positive note.</td>
+            </tr>
+            <tr>
+              <td>Calculate the words per second rate, <b>think step by step.</b>
+              </td>
+              <td>Let's break it down step by step:<br>1. The speech lasts for 2 seconds: [00:00:00 - 00:00:02]<br>2.
+                The
+                number of words is: "Thank you for calling. Goodbye." (5 words)<br>3. To find the words per second rate,
+                we need to divide the number of words by the time it took to say the words:<br>Words per second = Total
+                number of words / Time taken (in seconds)<br>= 5 words / 2 seconds<br>= 2.5 words per
+                second<br>Therefore,
+                the
+                words per second rate is 2.5 words</td>
+            </tr>
+        </table>
+      </div>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <h2 class="title is-2">Speech understanding</h2>
+      <h2 class="title is-2">Speech Understanding Ability</h2>
       <div class="content is-medium">
-        <h2 class="title is-4">Dynamic-SUPERB</h2>
-        <p>DynamicSUPERB is a crowdsourced benchmark comprising 48 speech-related
+        <h2 class="title is-4" id="dynamic-superb">Dynamic-SUPERB</h2>
+        <p><a href="https://ieeexplore.ieee.org/document/10448257">Dynamic-SUPERB</a> is a crowdsourced benchmark
+          comprising 48 speech-related
           classification tasks with human-created instructions and answers.</p>
       </div>
 
@@ -117,7 +172,7 @@
             <tr>
               <th>Audio</th>
               <th>Instruction</th>
-              <th>Model output</th>
+              <th>Model Output</th>
               <th>Ground Truth</th>
             </tr>
           </thead>
@@ -236,11 +291,9 @@
       </div>
 
       <div class="content is-medium">
-        <h2 class="title is-4">AIR-Bench-Chat</h2>
+        <h2 class="title is-4" id="AIR-Bench-Chat">AIR-Bench-Chat</h2>
         <p><a href="https://arxiv.org/abs/2402.07729">AIR-Bench-Chat</a> is an LLM-generated benchmark derived from
-          speech
-          metadata that focuses on open-ended
-          questions</p>
+          speech metadata that focuses on open-ended questions.</p>
       </div>
       <div class="table-container">
         <table class="table is-fullwidth">
@@ -248,21 +301,11 @@
             <tr>
               <th>Audio</th>
               <th>Instruction</th>
-              <th>Model output</th>
+              <th>Model Output</th>
               <th>Ground Truth</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>
-                <audio controls>
-                  <source src="assets/audios/common_voice_en_34980360.mp3">
-                </audio>
-              </td>
-              <td>What is the gender of the speaker?</td>
-              <td>The gender of the speaker is Male.</td>
-              <td>Male.</td>
-            </tr>
             <tr>
               <td>
                 <audio controls>
@@ -330,12 +373,14 @@
     <div class="container">
       <h1 class="title is-2">Method</h1>
       <div class="content is-large">
-        <h2 class="title is-3">Stage 1: Dataset Consturction</h2>
+        <h2 class="title is-3" id="dataset-construction">Stage 1: Dataset Consturction</h2>
 
         <p>In our dataset construction process, we first extract and format all textual attributes from the speech into
           a structured "seed transcript." This seed transcript is then combined with the prompt "What can you hear from
           the audio?" and fed into Llama3. The response generated by Llama3 becomes our training
           target for the end-to-end speech language model.</p>
+        <p>There are 12 attributes, including gender, age, accent, emotion, pitch, volume, speaking speed, SNR level,
+          C50 value, duration, intent, and spoken text.</p>
 
         <img src="assets/images/dataset_construction.png" alt="">
       </div>
@@ -357,7 +402,7 @@
         <thead>
           <tr>
             <th style="color:orange">Seed Transcript</th>
-            <th>Llama3-Instruct response</th>
+            <th>Llama3-Instruct Response</th>
             <th>Correspond Audio</th>
           </tr>
         </thead>
